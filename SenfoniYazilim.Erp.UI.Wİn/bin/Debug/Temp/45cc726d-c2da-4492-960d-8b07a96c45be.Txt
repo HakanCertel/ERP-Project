@@ -1,0 +1,4 @@
+RehberListForm	                    	                	                	            
+Kod           	Adý Soyadý          	Telefon-1       	Telefon-2       	Açýklama    
+Rehber-0001   	Kamuran Dillidudaklý	0(233) 464 57 46	0(235) 234 53 45	sdfkmnlksdmn
+Rehber-0002   	Kim Kiminle-ydi     	0(124) 908 34 09	0(234) 897 23 40	dfvþlmdflþl 

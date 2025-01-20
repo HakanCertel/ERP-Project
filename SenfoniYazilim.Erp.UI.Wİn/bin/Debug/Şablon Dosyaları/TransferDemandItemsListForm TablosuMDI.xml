@@ -1,0 +1,166 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="HeaderFilterButtonShowMode">Button</property>
+    <property name="ColumnAutoWidth">false</property>
+    <property name="RowAutoHeight">true</property>
+    <property name="ShowAutoFilterRow">true</property>
+    <property name="ShowGroupPanel">false</property>
+    <property name="ShowViewCaption">true</property>
+  </property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Columns" iskey="true" value="38">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Name">colId</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Name">colTransferId</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Name">colCreatorUserId</property>
+      <property name="VisibleIndex">13</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Name">colCreatorUserName</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Name">colMaterialId</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Name">colMaterialCode</property>
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="Width">117</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Name">colMaterialName</property>
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+      <property name="Width">328</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Name">colMaterialUnitCode</property>
+      <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="Name">colUnitId</property>
+      <property name="VisibleIndex">4</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="Name">colBirimAdi</property>
+      <property name="VisibleIndex">5</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="Name">colTransferWareHouseId</property>
+    </property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="Name">colTransferWareHouseName</property>
+      <property name="VisibleIndex">14</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item13" isnull="true" iskey="true">
+      <property name="Name">colTransferedWareHouseId</property>
+    </property>
+    <property name="Item14" isnull="true" iskey="true">
+      <property name="Name">colTransferedWareHousename</property>
+      <property name="VisibleIndex">15</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item15" isnull="true" iskey="true">
+      <property name="Name">colTransferDate</property>
+    </property>
+    <property name="Item16" isnull="true" iskey="true">
+      <property name="Name">colMaterialQuantity</property>
+      <property name="VisibleIndex">6</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item17" isnull="true" iskey="true">
+      <property name="Name">colRezerveQuantity</property>
+      <property name="VisibleIndex">7</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item18" isnull="true" iskey="true">
+      <property name="Name">colOpenQuantity</property>
+      <property name="VisibleIndex">8</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item19" isnull="true" iskey="true">
+      <property name="Name">colDemandedQuantity</property>
+      <property name="VisibleIndex">9</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item20" isnull="true" iskey="true">
+      <property name="Name">colComfirmedQuantity</property>
+    </property>
+    <property name="Item21" isnull="true" iskey="true">
+      <property name="Name">colTransferedQuantity</property>
+    </property>
+    <property name="Item22" isnull="true" iskey="true">
+      <property name="Name">colRemainingQuantity</property>
+      <property name="VisibleIndex">10</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item23" isnull="true" iskey="true">
+      <property name="Name">colRemainingMaterialQuantity</property>
+      <property name="VisibleIndex">11</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item24" isnull="true" iskey="true">
+      <property name="Name">colDocumentDate</property>
+    </property>
+    <property name="Item25" isnull="true" iskey="true">
+      <property name="Name">colTransferCreatingMethod</property>
+    </property>
+    <property name="Item26" isnull="true" iskey="true">
+      <property name="Name">colDemandedDate</property>
+      <property name="VisibleIndex">12</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item27" isnull="true" iskey="true">
+      <property name="Name">colDemandingUserId</property>
+    </property>
+    <property name="Item28" isnull="true" iskey="true">
+      <property name="Name">colDemandingUserName</property>
+    </property>
+    <property name="Item29" isnull="true" iskey="true">
+      <property name="Name">colIsActive</property>
+    </property>
+    <property name="Item30" isnull="true" iskey="true">
+      <property name="Name">colIsCancel</property>
+    </property>
+    <property name="Item31" isnull="true" iskey="true">
+      <property name="Name">colIsClosed</property>
+    </property>
+    <property name="Item32" isnull="true" iskey="true">
+      <property name="Name">colIsTransfered</property>
+    </property>
+    <property name="Item33" isnull="true" iskey="true">
+      <property name="Name">colRelatedRecordId</property>
+    </property>
+    <property name="Item34" isnull="true" iskey="true">
+      <property name="Name">colRelatedRecordName</property>
+    </property>
+    <property name="Item35" isnull="true" iskey="true">
+      <property name="Name">colRelatedRecordItemId</property>
+    </property>
+    <property name="Item36" isnull="true" iskey="true">
+      <property name="Name">colRelatedRecordItemName</property>
+    </property>
+    <property name="Item37" isnull="true" iskey="true">
+      <property name="Name">colDescriptionOfTransferProccess</property>
+    </property>
+    <property name="Item38" isnull="true" iskey="true">
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Width">35</property>
+    </property>
+  </property>
+  <property name="ActiveFilterString" />
+  <property name="GroupSummarySortInfoState" />
+  <property name="FindFilterText" />
+  <property name="FindPanelVisible">false</property>
+</XtraSerializer>

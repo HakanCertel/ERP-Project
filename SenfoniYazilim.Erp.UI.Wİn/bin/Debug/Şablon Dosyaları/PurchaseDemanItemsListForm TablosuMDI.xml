@@ -1,0 +1,269 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="HeaderFilterButtonShowMode">Button</property>
+    <property name="ColumnAutoWidth">false</property>
+    <property name="RowAutoHeight">true</property>
+    <property name="ShowAutoFilterRow">true</property>
+    <property name="ShowGroupPanel">false</property>
+    <property name="ShowViewCaption">true</property>
+  </property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Columns" iskey="true" value="50">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Name">colItemId</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Name">colPurchaseDemandId</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Name">colMaterialId</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Name">colPurchaseOfferId</property>
+      <property name="VisibleIndex">5</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Name">colPurchaseOrderId</property>
+      <property name="VisibleIndex">22</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Name">colDemandedCompanyId</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Name">colPurchaseOfferItemId</property>
+      <property name="VisibleIndex">7</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Name">colPurchaseOrderItemId</property>
+      <property name="VisibleIndex">26</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="Name">colConnectedItemId</property>
+      <property name="VisibleIndex">38</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="Name">colDemandQty</property>
+      <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+      <property name="Width">104</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="Name">colComfirmedQty</property>
+      <property name="VisibleIndex">11</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="Name">colDemandedDate</property>
+      <property name="VisibleIndex">10</property>
+      <property name="Visible">true</property>
+      <property name="Width">90</property>
+    </property>
+    <property name="Item13" isnull="true" iskey="true">
+      <property name="Name">colDemandFile</property>
+      <property name="VisibleIndex">13</property>
+      <property name="Visible">true</property>
+      <property name="Width">38</property>
+    </property>
+    <property name="Item14" isnull="true" iskey="true">
+      <property name="Name">colDemandDescription</property>
+      <property name="VisibleIndex">12</property>
+      <property name="Visible">true</property>
+      <property name="Width">165</property>
+    </property>
+    <property name="Item15" isnull="true" iskey="true">
+      <property name="Name">colDemandItemDescription</property>
+      <property name="VisibleIndex">14</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item16" isnull="true" iskey="true">
+      <property name="Name">colIsDemandItemCanceled</property>
+      <property name="VisibleIndex">15</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item17" isnull="true" iskey="true">
+      <property name="Name">colDemandComfirmState</property>
+      <property name="VisibleIndex">16</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item18" isnull="true" iskey="true">
+      <property name="Name">colOfferComfirmState</property>
+      <property name="VisibleIndex">17</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item19" isnull="true" iskey="true">
+      <property name="Name">colIsCreatedOrder</property>
+      <property name="VisibleIndex">18</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item20" isnull="true" iskey="true">
+      <property name="Name">colIsTopDemand</property>
+      <property name="VisibleIndex">20</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item21" isnull="true" iskey="true">
+      <property name="Name">colIsTopDemandExisted</property>
+    </property>
+    <property name="Item22" isnull="true" iskey="true">
+      <property name="Name">colIsPurchaseDemandActive</property>
+    </property>
+    <property name="Item23" isnull="true" iskey="true">
+      <property name="Name">colIsCreateOffer</property>
+      <property name="VisibleIndex">21</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item24" isnull="true" iskey="true">
+      <property name="Name">colPurchaseOfferDescription</property>
+      <property name="VisibleIndex">23</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item25" isnull="true" iskey="true">
+      <property name="Name">colPurchaseOrderDescription</property>
+      <property name="VisibleIndex">25</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item26" isnull="true" iskey="true">
+      <property name="Name">colMaterialCode</property>
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="Width">86</property>
+    </property>
+    <property name="Item27" isnull="true" iskey="true">
+      <property name="Name">colMaterialName</property>
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+      <property name="Width">168</property>
+    </property>
+    <property name="Item28" isnull="true" iskey="true">
+      <property name="Name">colDemandedCompanyName</property>
+      <property name="VisibleIndex">29</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item29" isnull="true" iskey="true">
+      <property name="Name">colOrderedCompanyName</property>
+      <property name="VisibleIndex">31</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item30" isnull="true" iskey="true">
+      <property name="Name">colPurchaseOfferItemDescription</property>
+      <property name="VisibleIndex">32</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item31" isnull="true" iskey="true">
+      <property name="Name">colStorageStockQty</property>
+      <property name="VisibleIndex">4</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item32" isnull="true" iskey="true">
+      <property name="Name">colTotalPurchaseOrderQty</property>
+      <property name="VisibleIndex">6</property>
+      <property name="Visible">true</property>
+      <property name="Width">106</property>
+    </property>
+    <property name="Item33" isnull="true" iskey="true">
+      <property name="Name">colMaxPurchaseOrderQty</property>
+      <property name="VisibleIndex">28</property>
+      <property name="Visible">true</property>
+      <property name="Width">91</property>
+    </property>
+    <property name="Item34" isnull="true" iskey="true">
+      <property name="Name">colMinPurchaseOrderQty</property>
+      <property name="VisibleIndex">33</property>
+      <property name="Visible">true</property>
+      <property name="Width">88</property>
+    </property>
+    <property name="Item35" isnull="true" iskey="true">
+      <property name="Name">colMaxStockQty</property>
+      <property name="VisibleIndex">34</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item36" isnull="true" iskey="true">
+      <property name="Name">colMinStockQty</property>
+      <property name="VisibleIndex">35</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item37" isnull="true" iskey="true">
+      <property name="Name">colPurchaseOfferQty</property>
+      <property name="VisibleIndex">36</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item38" isnull="true" iskey="true">
+      <property name="Name">colPurchaseOrderQty</property>
+      <property name="VisibleIndex">39</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item39" isnull="true" iskey="true">
+      <property name="Name">colRemainingOrderQty</property>
+      <property name="VisibleIndex">8</property>
+      <property name="Visible">true</property>
+      <property name="Width">89</property>
+    </property>
+    <property name="Item40" isnull="true" iskey="true">
+      <property name="Name">colCompanyName</property>
+      <property name="VisibleIndex">19</property>
+      <property name="Visible">true</property>
+      <property name="Width">172</property>
+    </property>
+    <property name="Item41" isnull="true" iskey="true">
+      <property name="Name">colCreatorName</property>
+      <property name="VisibleIndex">27</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item42" isnull="true" iskey="true">
+      <property name="Name">colCreatedDate</property>
+      <property name="VisibleIndex">37</property>
+      <property name="Visible">true</property>
+      <property name="Width">105</property>
+    </property>
+    <property name="Item43" isnull="true" iskey="true">
+      <property name="Name">colUpdatingName</property>
+      <property name="VisibleIndex">40</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item44" isnull="true" iskey="true">
+      <property name="Name">colUpdatingDate</property>
+      <property name="VisibleIndex">41</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item45" isnull="true" iskey="true">
+      <property name="Name">colUnitId</property>
+      <property name="VisibleIndex">30</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item46" isnull="true" iskey="true">
+      <property name="Name">colIsActive</property>
+      <property name="VisibleIndex">24</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item47" isnull="true" iskey="true">
+      <property name="Name">colWayBillQty</property>
+      <property name="VisibleIndex">42</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item48" isnull="true" iskey="true">
+      <property name="Name">colUnitCode</property>
+      <property name="VisibleIndex">9</property>
+      <property name="Visible">true</property>
+      <property name="Width">39</property>
+    </property>
+    <property name="Item49" isnull="true" iskey="true">
+      <property name="Name">DataSourceCardType</property>
+      <property name="VisibleIndex">43</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item50" isnull="true" iskey="true">
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Width">35</property>
+    </property>
+  </property>
+  <property name="ActiveFilterString" />
+  <property name="GroupSummarySortInfoState" />
+  <property name="FindFilterText" />
+  <property name="FindPanelVisible">false</property>
+</XtraSerializer>

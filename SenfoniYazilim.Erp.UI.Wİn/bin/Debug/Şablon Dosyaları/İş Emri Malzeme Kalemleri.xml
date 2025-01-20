@@ -1,0 +1,89 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="HeaderFilterButtonShowMode">Button</property>
+    <property name="ColumnAutoWidth">false</property>
+    <property name="RowAutoHeight">true</property>
+    <property name="ShowAutoFilterRow">true</property>
+    <property name="ShowGroupPanel">false</property>
+    <property name="ShowViewCaption">true</property>
+  </property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Columns" iskey="true" value="16">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Name">colId</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Name">colOwnerFormId</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Name">colMrpBilgileriId</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Name">colMalzemeIhtiyacBilgileriId</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Name">colBagliOlduguReceteId</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Name">colMaterialId</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Name">colMaterialCode</property>
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Name">colMaterialName</property>
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="Width">295</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="Name">colWarehouseId</property>
+      <property name="VisibleIndex">7</property>
+      <property name="Visible">true</property>
+      <property name="Width">118</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="Name">colWarehouseName</property>
+      <property name="VisibleIndex">5</property>
+      <property name="Visible">true</property>
+      <property name="Width">115</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="Name">colUnitId</property>
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="Name">UnitCode</property>
+      <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item13" isnull="true" iskey="true">
+      <property name="Name">colUnitQty</property>
+      <property name="VisibleIndex">4</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item14" isnull="true" iskey="true">
+      <property name="Name">colWastageQty</property>
+      <property name="VisibleIndex">6</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item15" isnull="true" iskey="true">
+      <property name="Name">colTotalRequestQty</property>
+      <property name="VisibleIndex">8</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item16" isnull="true" iskey="true">
+      <property name="Name">colRemainingRequestQty</property>
+      <property name="VisibleIndex">9</property>
+      <property name="Visible">true</property>
+    </property>
+  </property>
+  <property name="ActiveFilterString" />
+  <property name="GroupSummarySortInfoState" />
+  <property name="FindFilterText" />
+  <property name="FindPanelVisible">false</property>
+</XtraSerializer>

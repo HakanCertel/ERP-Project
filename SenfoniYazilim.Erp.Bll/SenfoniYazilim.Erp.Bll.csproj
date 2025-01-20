@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF539854-22AA-456E-A9A0-010F09AC092E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SenfoniYazilim.Erp.Bll</RootNamespace>
+    <AssemblyName>SenfoniYazilim.Erp.Bll</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseBll.cs" />
+    <Compile Include="Base\BaseGenelBll.cs" />
+    <Compile Include="Base\BaseGenelYonetimBll.cs" />
+    <Compile Include="Base\BaseHareketBll.cs" />
+    <Compile Include="Functions\Converts\Converts.cs" />
+    <Compile Include="Functions\Crypto.cs" />
+    <Compile Include="Functions\GeneralFunctions.cs" />
+    <Compile Include="Functions\GetAnySingleOrListBllFunction.cs" />
+    <Compile Include="Functions\InsertOrUpdateAnyItem.cs" />
+    <Compile Include="Functions\InstanceBll.cs" />
+    <Compile Include="Functions\ValidationFunctions.cs" />
+    <Compile Include="General\AvukatBll.cs" />
+    <Compile Include="General\BankaBll.cs" />
+    <Compile Include="General\BankaHesapBll.cs" />
+    <Compile Include="General\BankaSubeBll.cs" />
+    <Compile Include="General\BelgeHareketleriBll.cs" />
+    <Compile Include="General\BelgeSecimBll.cs" />
+    <Compile Include="General\BilgiNotlariBll.cs" />
+    <Compile Include="General\Company\CompanyContactBll.cs" />
+    <Compile Include="General\Company\CompanyPriceListBll.cs" />
+    <Compile Include="General\Company\CompanyRelatedMaterialsBll.cs" />
+    <Compile Include="General\Company\CompanySettingsBll.cs" />
+    <Compile Include="General\CRP\IsEmriBll.cs" />
+    <Compile Include="General\CRP\KapasiteIhtiyacBilgileriBll.cs" />
+    <Compile Include="General\CRP\PlanlanmisMalzemeKalemleriBll.cs" />
+    <Compile Include="General\CRP\WorkOrderMaterialItemsBll.cs" />
+    <Compile Include="General\CRP\WorkOrdersBll.cs" />
+    <Compile Include="General\MaterialBlls\MaterialUnitsBll.cs" />
+    <Compile Include="General\ProductionManangmentBll\UretimSonuKayitSurecBll\UretimSonuKayitBll.cs" />
+    <Compile Include="General\WarehouseBll\TransferDemandWarehouseBll.cs" />
+    <Compile Include="General\WarehouseBll\TransferItemsBetweenWarehousesBll.cs" />
+    <Compile Include="General\WarehouseBll\WarehouseSettingsBll.cs" />
+    <Compile Include="General\WarehouseBll\WarehouseStockUpdateBll.cs" />
+    <Compile Include="General\DonemBll.cs" />
+    <Compile Include="General\DonemParametreBll.cs" />
+    <Compile Include="General\EksiyeDusenStokBilgileriBll.cs" />
+    <Compile Include="General\EvrakBll.cs" />
+    <Compile Include="General\IstasyonBll.cs" />
+    <Compile Include="General\IstasyonOperasyonBilgileriBll.cs" />
+    <Compile Include="General\Istasyon_Makina_Personel_BilgileriBll.cs" />
+    <Compile Include="General\KullaniciBirimYetkileriBll.cs" />
+    <Compile Include="General\KullaniciBll.cs" />
+    <Compile Include="General\KullaniciParametreBll.cs" />
+    <Compile Include="General\KurumBilgileriBll.cs" />
+    <Compile Include="General\KurumBll.cs" />
+    <Compile Include="General\MailParametreBll.cs" />
+    <Compile Include="General\MakinaKapasiteKullanımBilgileriBll.cs" />
+    <Compile Include="General\Makina_MakinaElemenlari_BilgileriBll.cs" />
+    <Compile Include="General\PriceListBll\PriceListBll.cs" />
+    <Compile Include="General\PriceListBll\PriceListItemsBll.cs" />
+    <Compile Include="General\ProductionDemandBll.cs" />
+    <Compile Include="General\PurchaseBll\PurchaseDemandItemsFeatureBll.cs" />
+    <Compile Include="General\PurchaseBll\PurchaseDemandItemsFormBll.cs" />
+    <Compile Include="General\PurchaseBll\PurchaseOrderBll.cs" />
+    <Compile Include="General\PurchaseBll\PurchaseOrderItemsBll.cs" />
+    <Compile Include="General\PurchaseBll\PurchaseSettingsBll.cs" />
+    <Compile Include="General\ReceteMakinaElemaniBilgileriBll.cs" />
+    <Compile Include="General\RezervasyonBilgileriBll.cs" />
+    <Compile Include="General\RolBll.cs" />
+    <Compile Include="General\RolYetkileriBll.cs" />
+    <Compile Include="General\OrderDemandBll.cs" />
+    <Compile Include="General\PurchaseBll\PurchaseDemandBll.cs" />
+    <Compile Include="General\PurchaseBll\PurchaseDemandItemsTableBll.cs" />
+    <Compile Include="General\PurchaseBll\PurchaseOfferBll.cs" />
+    <Compile Include="General\PurchaseBll\PurchaseOfferItemsBll.cs" />
+    <Compile Include="General\SalesBll\SalesBll.cs" />
+    <Compile Include="General\SalesBll\SalesItemsBll.cs" />
+    <Compile Include="General\SalesBll\SalesOfferBll.cs" />
+    <Compile Include="General\SalesBll\SalesOfferItemsBll.cs" />
+    <Compile Include="General\StokHareketleriBll.cs" />
+    <Compile Include="General\SubeBll.cs" />
+    <Compile Include="General\TarihBll.cs" />
+    <Compile Include="General\TatilBilgileriBll.cs" />
+    <Compile Include="General\ProductionManangmentBll\UretimSonuKayitSurecBll\UretimSonuKayitBilgileriBll.cs" />
+    <Compile Include="General\VardiyaBilgileriLastVersionBll.cs" />
+    <Compile Include="General\VardiyaBll.cs" />
+    <Compile Include="General\Company\CariBll.cs" />
+    <Compile Include="General\WarehouseBll\WareHouseBll.cs" />
+    <Compile Include="General\WarehouseBll\WarehouseStockBll.cs" />
+    <Compile Include="General\EPosBilgileriBll.cs" />
+    <Compile Include="General\FaturaBll.cs" />
+    <Compile Include="General\FiltreBll.cs" />
+    <Compile Include="General\GeriOdemeBilgileriBll.cs" />
+    <Compile Include="General\GorevBll.cs" />
+    <Compile Include="General\HizmetBilgileriBll.cs" />
+    <Compile Include="General\HizmetBll.cs" />
+    <Compile Include="General\HizmetTuruBll.cs" />
+    <Compile Include="General\IlBll.cs" />
+    <Compile Include="General\IlceBll.cs" />
+    <Compile Include="General\IletisimBilgileriBll.cs" />
+    <Compile Include="General\IletisimBll.cs" />
+    <Compile Include="General\IndirimBilgileriBll.cs" />
+    <Compile Include="General\IndirimBll.cs" />
+    <Compile Include="General\IndiriminUygulanacagiHizmetBilgileriBll.cs" />
+    <Compile Include="General\IndirimTuruBll.cs" />
+    <Compile Include="General\IptalNedeniBll.cs" />
+    <Compile Include="General\IsyeriBll.cs" />
+    <Compile Include="General\KardesBilgileriBll.cs" />
+    <Compile Include="General\KasaBll.cs" />
+    <Compile Include="General\KontenjanBll.cs" />
+    <Compile Include="General\MakbuzBll.cs" />
+    <Compile Include="General\MakbuzHareketleriBll.cs" />
+    <Compile Include="General\MakinaBll.cs" />
+    <Compile Include="General\MalzemeIhtiyacBilgileriBll.cs" />
+    <Compile Include="General\MeslekBll.cs" />
+    <Compile Include="General\MrpBilgileriBll.cs" />
+    <Compile Include="General\MrpBll.cs" />
+    <Compile Include="General\OdemeBilgileriBll.cs" />
+    <Compile Include="General\OdemeTuruBll.cs" />
+    <Compile Include="General\PersonelBll.cs" />
+    <Compile Include="General\OkulBll.cs" />
+    <Compile Include="General\OperasyonBll.cs" />
+    <Compile Include="General\OzelKodBll.cs" />
+    <Compile Include="General\PromosyonBilgileriBll.cs" />
+    <Compile Include="General\PromosyonBll.cs" />
+    <Compile Include="General\RaporBll.cs" />
+    <Compile Include="General\ReceteBilgileriBll.cs" />
+    <Compile Include="General\ReceteBll.cs" />
+    <Compile Include="General\ReceteOperasyonBilgileriBll.cs" />
+    <Compile Include="General\ReceteOperasyonMakinaBilgileriBll.cs" />
+    <Compile Include="General\Rehber.cs" />
+    <Compile Include="General\ServisBll.cs" />
+    <Compile Include="General\MaterialBlls\MaterialBll.cs" />
+    <Compile Include="General\TahakkukBll.cs" />
+    <Compile Include="General\VardiyaLastVersionBll.cs" />
+    <Compile Include="General\WayBillBll\DispatchWayBillBll.cs" />
+    <Compile Include="General\WayBillBll\DispatchWayBillItemsBll.cs" />
+    <Compile Include="General\WayBillBll\PurchaseWayBillBll.cs" />
+    <Compile Include="General\WayBillBll\PurchaseWayBillItemsBll.cs" />
+    <Compile Include="General\YabanciDilBll.cs" />
+    <Compile Include="Interfaces\IBaseBll.cs" />
+    <Compile Include="Interfaces\IBaseCommonBll.cs" />
+    <Compile Include="Interfaces\IBaseGenelBll.cs" />
+    <Compile Include="Interfaces\IBaseHareketGenelBll.cs" />
+    <Compile Include="Interfaces\IBaseHareketSelectBll.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="General\ProductionDemandInformationsBll.cs" />
+    <Compile Include="YardimciFormTablo\AddressItemsBll.cs" />
+    <Compile Include="YardimciFormTablo\BirimBll.cs" />
+    <Compile Include="YardimciFormTablo\CountryBll.cs" />
+    <Compile Include="YardimciFormTablo\DefinationsBll.cs" />
+    <Compile Include="YardimciFormTablo\DovizBilgileriBll.cs" />
+    <Compile Include="YardimciFormTablo\EvrakTurleriBll.cs" />
+    <Compile Include="YardimciFormTablo\FeaturesBll.cs" />
+    <Compile Include="YardimciFormTablo\KdvBll.cs" />
+    <Compile Include="YardimciFormTablo\LanguageBll.cs" />
+    <Compile Include="YardimciFormTablo\PackagingBll.cs" />
+    <Compile Include="YardimciFormTablo\PaymentMethodItemsBll.cs" />
+    <Compile Include="YardimciFormTablo\SevkiyatSekliBll.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SenfoniYazilim.Dal\SenfoniYazilim.Dal.csproj">
+      <Project>{EF6B6C62-C5D6-4086-971B-FC8262FC48A2}</Project>
+      <Name>SenfoniYazilim.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SenfoniYazilim.Erp.Common\SenfoniYazilim.Erp.Common.csproj">
+      <Project>{266E44C4-F140-4E6C-9275-23CB051A02B8}</Project>
+      <Name>SenfoniYazilim.Erp.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SenfoniYazilim.Erp.Data\SenfoniYazilim.Erp.Data.csproj">
+      <Project>{51F9ED60-AB97-4755-B5F8-60B82C97504C}</Project>
+      <Name>SenfoniYazilim.Erp.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SenfoniYazilim.Erp.Model\SenfoniYazilim.Erp.Model.csproj">
+      <Project>{D1362D38-7D1A-41B4-ADBF-F4E0E9B1B7EA}</Project>
+      <Name>SenfoniYazilim.Erp.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

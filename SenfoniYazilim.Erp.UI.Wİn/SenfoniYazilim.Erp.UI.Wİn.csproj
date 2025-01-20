@@ -1,0 +1,3327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E17FA43-D876-43D5-9E09-FA01FACF99E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SenfoniYazilim.Erp.UI.Wİn</RootNamespace>
+    <AssemblyName>Senfoni Erp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\musical.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.1.UI, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Extensions, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AvukatForms\AvukatEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AvukatForms\AvukatEditForm.Designer.cs">
+      <DependentUpon>AvukatEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AvukatForms\AvukatListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AvukatForms\AvukatListForm.Designer.cs">
+      <DependentUpon>AvukatListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankaForms\BankaEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaForms\BankaEditForm.Designer.cs">
+      <DependentUpon>BankaEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankaForms\BankaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaForms\BankaListForm.Designer.cs">
+      <DependentUpon>BankaListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankaHesapForms\BankaHesapEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaHesapForms\BankaHesapEditForm.Designer.cs">
+      <DependentUpon>BankaHesapEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankaHesapForms\BankaHesapListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaHesapForms\BankaHesapListForm.Designer.cs">
+      <DependentUpon>BankaHesapListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankaSubeForms\BankaSubeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaSubeForms\BankaSubeEditForm.Designer.cs">
+      <DependentUpon>BankaSubeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankaSubeForms\BankaSubeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaSubeForms\BankaSubeListForm.Designer.cs">
+      <DependentUpon>BankaSubeListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BaseForms\BaseEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseForms\BaseEditForm.Designer.cs">
+      <DependentUpon>BaseEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BaseForms\BaseListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseForms\BaseListForm.Designer.cs">
+      <DependentUpon>BaseListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CariForms\CariEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CariForms\CariEditForm.Designer.cs">
+      <DependentUpon>CariEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CariForms\CariListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CariForms\CariListForm.Designer.cs">
+      <DependentUpon>CariListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CariForms\CompanyTables\AddressItemsTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CariForms\CompanyTables\AddressItemsTable.Designer.cs">
+      <DependentUpon>AddressItemsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CariForms\CompanyTables\CompanyContactTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CariForms\CompanyTables\CompanyContactTable.Designer.cs">
+      <DependentUpon>CompanyContactTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CariForms\CompanyTables\CompanyRelatedMaterialTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CariForms\CompanyTables\CompanyRelatedMaterialTable.Designer.cs">
+      <DependentUpon>CompanyRelatedMaterialTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CariForms\CompanyTables\CompanyPriceListTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CariForms\CompanyTables\CompanyPriceListTable.Designer.cs">
+      <DependentUpon>CompanyPriceListTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\CRPEditTables\PlanlanmisMalzemeKalemleriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\CRPEditTables\PlanlanmisMalzemeKalemleriTable.Designer.cs">
+      <DependentUpon>PlanlanmisMalzemeKalemleriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\IsEmriForms\IsEmriEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\IsEmriForms\IsEmriEditForm.Designer.cs">
+      <DependentUpon>IsEmriEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\IsEmriForms\IsEmriListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\IsEmriForms\IsEmriListForm.Designer.cs">
+      <DependentUpon>IsEmriListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\IsEmriForms\IsEmriTables\BagliMalzemeKalemleriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\IsEmriForms\IsEmriTables\BagliMalzemeKalemleriTable.Designer.cs">
+      <DependentUpon>BagliMalzemeKalemleriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\IsEmriForms\IsEmriTables\WorkOrderMaterialTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\IsEmriForms\IsEmriTables\WorkOrderMaterialTable.Designer.cs">
+      <DependentUpon>WorkOrderMaterialTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\KapasiteIhtiyacListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\KapasiteIhtiyacListForm.Designer.cs">
+      <DependentUpon>KapasiteIhtiyacListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MalzemeIhtiyacKalemleriListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MalzemeIhtiyacKalemleriListForm.Designer.cs">
+      <DependentUpon>MalzemeIhtiyacKalemleriListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\ReceteEditFormTable\ReceteOperasyonBilgiTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\ReceteEditFormTable\ReceteOperasyonBilgiTable.Designer.cs">
+      <DependentUpon>ReceteOperasyonBilgiTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\UretimSonuKayıtForms\UretimSonuKayitEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\UretimSonuKayıtForms\UretimSonuKayitEditForm.Designer.cs">
+      <DependentUpon>UretimSonuKayitEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StokForms\MaterialTables\MaterialUnitsTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\StokForms\MaterialTables\MaterialUnitsTable.Designer.cs">
+      <DependentUpon>MaterialUnitsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\DATMalzemeIhtiyaclariListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\DATMalzemeIhtiyaclariListForm.Designer.cs">
+      <DependentUpon>DATMalzemeIhtiyaclariListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\DATStokListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\DATStokListForm.Designer.cs">
+      <DependentUpon>DATStokListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferDemandItemsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferDemandItemsListForm.Designer.cs">
+      <DependentUpon>TransferDemandItemsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferDemandBetweenWarehousesListFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferDemandBetweenWarehousesListFrom.Designer.cs">
+      <DependentUpon>TransferDemandBetweenWarehousesListFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferDemandBetweenWarehouseTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferDemandBetweenWarehouseTable.Designer.cs">
+      <DependentUpon>TransferDemandBetweenWarehouseTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferDemandBetweenWarehousesEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferDemandBetweenWarehousesEditForm.Designer.cs">
+      <DependentUpon>TransferDemandBetweenWarehousesEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\WarehouseForms\WarehouseEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\WarehouseForms\WarehouseEditForm.Designer.cs">
+      <DependentUpon>WarehouseEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferBetweenWarehousesEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferBetweenWarehousesEditForm.Designer.cs">
+      <DependentUpon>TransferBetweenWarehousesEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferBetweenWarehousesListFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferBetweenWarehousesListFrom.Designer.cs">
+      <DependentUpon>TransferBetweenWarehousesListFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\WarehouseForms\WarehouseListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\WarehouseForms\WarehouseListForm.Designer.cs">
+      <DependentUpon>WarehouseListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\DepoStokDuzeltEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\DepoStokDuzeltEditForm.Designer.cs">
+      <DependentUpon>DepoStokDuzeltEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\DepoStokListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\DepoStokListForm.Designer.cs">
+      <DependentUpon>DepoStokListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\SevkİrsaliyeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\SevkİrsaliyeEditForm.Designer.cs">
+      <DependentUpon>SevkİrsaliyeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DonemForms\DonemEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DonemForms\DonemEditForm.Designer.cs">
+      <DependentUpon>DonemEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DonemForms\DonemListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DonemForms\DonemListForm.Designer.cs">
+      <DependentUpon>DonemListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EvrakForms\EvrakEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EvrakForms\EvrakEditForm.Designer.cs">
+      <DependentUpon>EvrakEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EvrakForms\EvrakListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EvrakForms\EvrakListForm.Designer.cs">
+      <DependentUpon>EvrakListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FaturaForms\FaturaPlaniEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FaturaForms\FaturaPlaniEditForm.Designer.cs">
+      <DependentUpon>FaturaPlaniEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FaturaForms\FaturaPlaniListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FaturaForms\FaturaPlaniListForm.Designer.cs">
+      <DependentUpon>FaturaPlaniListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FaturaForms\FaturaTahakkukEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FaturaForms\FaturaTahakkukEditForm.Designer.cs">
+      <DependentUpon>FaturaTahakkukEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FaturaForms\TopluFaturaPlaniEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FaturaForms\TopluFaturaPlaniEditForm.Designer.cs">
+      <DependentUpon>TopluFaturaPlaniEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FİltreForms\FiltreEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FİltreForms\FiltreEditForm.Designer.cs">
+      <DependentUpon>FiltreEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FİltreForms\FiltreListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FİltreForms\FiltreListForm.Designer.cs">
+      <DependentUpon>FiltreListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GorevForms\GorevEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GorevForms\GorevEditForm.Designer.cs">
+      <DependentUpon>GorevEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GorevForms\GorevListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GorevForms\GorevListForm.Designer.cs">
+      <DependentUpon>GorevListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HizmetForms\HizmetEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HizmetForms\HizmetEditForm.Designer.cs">
+      <DependentUpon>HizmetEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HizmetForms\HizmetListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HizmetForms\HizmetListForm.Designer.cs">
+      <DependentUpon>HizmetListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HizmetTuruForms\HizmetTuruEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HizmetTuruForms\HizmetTuruEditForm.Designer.cs">
+      <DependentUpon>HizmetTuruEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HizmetTuruForms\HizmetTuruListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HizmetTuruForms\HizmetTuruListForm.Designer.cs">
+      <DependentUpon>HizmetTuruListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IlceForms\IlceEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IlceForms\IlceEditForm.Designer.cs">
+      <DependentUpon>IlceEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IlceForms\IlceListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IlceForms\IlceListForm.Designer.cs">
+      <DependentUpon>IlceListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IletisimForms\IletisimEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IletisimForms\IletisimEditForm.Designer.cs">
+      <DependentUpon>IletisimEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IletisimForms\IletisimListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IletisimForms\IletisimListForm.Designer.cs">
+      <DependentUpon>IletisimListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IlForms\IlEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IlForms\IlEditForm.Designer.cs">
+      <DependentUpon>IlEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IlForms\IlListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IlForms\IlListForm.Designer.cs">
+      <DependentUpon>IlListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IndirimForms\IndirimEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IndirimForms\IndirimEditForm.Designer.cs">
+      <DependentUpon>IndirimEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IndirimForms\IndirimListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IndirimForms\IndirimListForm.Designer.cs">
+      <DependentUpon>IndirimListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IndirimTuruForms\IndirimTuruEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IndirimTuruForms\IndirimTuruEditForm.Designer.cs">
+      <DependentUpon>IndirimTuruEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IndirimTuruForms\IndirimTuruListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IndirimTuruForms\IndirimTuruListForm.Designer.cs">
+      <DependentUpon>IndirimTuruListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IptalNedeniForms\IptalNedeniEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IptalNedeniForms\IptalNedeniEditForm.Designer.cs">
+      <DependentUpon>IptalNedeniEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IptalNedeniForms\IptalNedeniListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IptalNedeniForms\IptalNedeniListForm.Designer.cs">
+      <DependentUpon>IptalNedeniListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\IstasyonForms\IstasyonEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\IstasyonForms\IstasyonEditForm.Designer.cs">
+      <DependentUpon>IstasyonEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\IstasyonForms\IstasyonListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\IstasyonForms\IstasyonListForm.Designer.cs">
+      <DependentUpon>IstasyonListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\IstasyonForms\IstasyonOperasyonBilgileriListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\IstasyonForms\IstasyonOperasyonBilgileriListForm.Designer.cs">
+      <DependentUpon>IstasyonOperasyonBilgileriListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IsyeriForms\IsyeriEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IsyeriForms\IsyeriEditForm.Designer.cs">
+      <DependentUpon>IsyeriEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IsyeriForms\IsyeriListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IsyeriForms\IsyeriListForm.Designer.cs">
+      <DependentUpon>IsyeriListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KasaForms\KasaEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KasaForms\KasaEditForm.Designer.cs">
+      <DependentUpon>KasaEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KasaForms\KasaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KasaForms\KasaListForm.Designer.cs">
+      <DependentUpon>KasaListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\KullaniciBirimYetkileriEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\KullaniciBirimYetkileriEditForm.Designer.cs">
+      <DependentUpon>KullaniciBirimYetkileriEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\KullaniciEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\KullaniciEditForm.Designer.cs">
+      <DependentUpon>KullaniciEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\KullaniciListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\KullaniciListForm.Designer.cs">
+      <DependentUpon>KullaniciListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\RolEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\RolEditForm.Designer.cs">
+      <DependentUpon>RolEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\RolListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\RolListForm.Designer.cs">
+      <DependentUpon>RolListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\RolYetkiKartlariListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\RolYetkiKartlariListForm.Designer.cs">
+      <DependentUpon>RolYetkiKartlariListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\SifreDegistirEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\SifreDegistirEditForm.Designer.cs">
+      <DependentUpon>SifreDegistirEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\SifremiUnuttumEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForms\SifremiUnuttumEditForm.Designer.cs">
+      <DependentUpon>SifremiUnuttumEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MakbuzForms\BelgeHareketleriListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MakbuzForms\BelgeHareketleriListForm.Designer.cs">
+      <DependentUpon>BelgeHareketleriListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MakbuzForms\BelgeSecimListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MakbuzForms\BelgeSecimListForm.Designer.cs">
+      <DependentUpon>BelgeSecimListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MakbuzForms\MakbuzEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MakbuzForms\MakbuzEditForm.Designer.cs">
+      <DependentUpon>MakbuzEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MakbuzForms\MakbuzListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MakbuzForms\MakbuzListForm.Designer.cs">
+      <DependentUpon>MakbuzListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MakinaForms\MakinaEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MakinaForms\MakinaEditForm.Designer.cs">
+      <DependentUpon>MakinaEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MakinaForms\MakinaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MakinaForms\MakinaListForm.Designer.cs">
+      <DependentUpon>MakinaListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MeslekForms\MeslekEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MeslekForms\MeslekEditForm.Designer.cs">
+      <DependentUpon>MeslekEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MeslekForms\MeslekListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MeslekForms\MeslekListForm.Designer.cs">
+      <DependentUpon>MeslekListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\IsEmriRaporSecimListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\IsEmriRaporSecimListForm.Designer.cs">
+      <DependentUpon>IsEmriRaporSecimListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\MalzemeIhtiyacBolEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\MalzemeIhtiyacBolEditForm.Designer.cs">
+      <DependentUpon>MalzemeIhtiyacBolEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\MalzemeIhtiyacPlanlamaEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\MalzemeIhtiyacPlanlamaEditForm.Designer.cs">
+      <DependentUpon>MalzemeIhtiyacPlanlamaEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MrpRezervasyonSecimList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MrpRezervasyonSecimList.Designer.cs">
+      <DependentUpon>MrpRezervasyonSecimList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonelForms\PersonelEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonelForms\PersonelEditForm.Designer.cs">
+      <DependentUpon>PersonelEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonelForms\PersonelListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonelForms\PersonelListForm.Designer.cs">
+      <DependentUpon>PersonelListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\OperasyonForms\OperasyonEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\OperasyonForms\OperasyonEditForm.Designer.cs">
+      <DependentUpon>OperasyonEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\OperasyonForms\OperasyonListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\OperasyonForms\OperasyonListForm.Designer.cs">
+      <DependentUpon>OperasyonListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OzelKodForms\OzelKodEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OzelKodForms\OzelKodEditForm.Designer.cs">
+      <DependentUpon>OzelKodEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OzelKodForms\OzelKodListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OzelKodForms\OzelKodListForm.Designer.cs">
+      <DependentUpon>OzelKodListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PriceListForms\PriceListEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PriceListForms\PriceListEditForm.Designer.cs">
+      <DependentUpon>PriceListEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PriceListForms\PriceListComfirmOrCancelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PriceListForms\PriceListComfirmOrCancelForm.Designer.cs">
+      <DependentUpon>PriceListComfirmOrCancelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PriceListForms\PriceListListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PriceListForms\PriceListListForm.Designer.cs">
+      <DependentUpon>PriceListListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PriceListForms\PriceListTables\PriceListEditTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\PriceListForms\PriceListTables\PriceListEditTable.Designer.cs">
+      <DependentUpon>PriceListEditTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseSettingsForms\PurchaseSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseSettingsForms\PurchaseSettingsForm.Designer.cs">
+      <DependentUpon>PurchaseSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaSiparisForms\PurchaseOrderItemsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaSiparisForms\PurchaseOrderItemsListForm.Designer.cs">
+      <DependentUpon>PurchaseOrderItemsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesEditForm.Designer.cs">
+      <DependentUpon>SalesEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesListForm.Designer.cs">
+      <DependentUpon>SalesListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesItemsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesItemsListForm.Designer.cs">
+      <DependentUpon>SalesItemsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesOfferListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesOfferListForm.Designer.cs">
+      <DependentUpon>SalesOfferListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesOfferEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesOfferEditForm.Designer.cs">
+      <DependentUpon>SalesOfferEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\WarehouseSettingsForms\WarehouseSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\WarehouseSettingsForms\WarehouseSettingsForm.Designer.cs">
+      <DependentUpon>WarehouseSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\WarehouseSettingsForms\WarehouseSettingsTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\WarehouseSettingsForms\WarehouseSettingsTable.Designer.cs">
+      <DependentUpon>WarehouseSettingsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WayBillForms\PurchaseWayBillTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\WayBillForms\PurchaseWayBillTable.Designer.cs">
+      <DependentUpon>PurchaseWayBillTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WayBillForms\PurchaseWayBillEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WayBillForms\PurchaseWayBillEditForm.Designer.cs">
+      <DependentUpon>PurchaseWayBillEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaSiparisForms\PurchaseOrderListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaSiparisForms\PurchaseOrderListForm.Designer.cs">
+      <DependentUpon>PurchaseOrderListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaSiparisForms\PurchaseOrderTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaSiparisForms\PurchaseOrderTable.Designer.cs">
+      <DependentUpon>PurchaseOrderTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaTeklifForms\PurchaseOfferItemsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaTeklifForms\PurchaseOfferItemsListForm.Designer.cs">
+      <DependentUpon>PurchaseOfferItemsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WayBillForms\PurchaseWayBillListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WayBillForms\PurchaseWayBillListForm.Designer.cs">
+      <DependentUpon>PurchaseWayBillListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RaporForms\RaporEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RaporForms\RaporEditForm.Designer.cs">
+      <DependentUpon>RaporEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RaporForms\RaporListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RaporForms\RaporListForm.Designer.cs">
+      <DependentUpon>RaporListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MalzemeIhtiyaclarıListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MalzemeIhtiyaclarıListForm.Designer.cs">
+      <DependentUpon>MalzemeIhtiyaclarıListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MrpEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MrpEditForm.Designer.cs">
+      <DependentUpon>MrpEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MrpListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MrpListForm.Designer.cs">
+      <DependentUpon>MrpListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\MakinaElemanlariListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\MakinaElemanlariListForm.Designer.cs">
+      <DependentUpon>MakinaElemanlariListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\OperasyonaBagliTuketilecekReceteBilesenleriList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\OperasyonaBagliTuketilecekReceteBilesenleriList.Designer.cs">
+      <DependentUpon>OperasyonaBagliTuketilecekReceteBilesenleriList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\OperasyonMakinaBilgileriListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\OperasyonMakinaBilgileriListForm.Designer.cs">
+      <DependentUpon>OperasyonMakinaBilgileriListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\ReceteEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\ReceteEditForm.Designer.cs">
+      <DependentUpon>ReceteEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\ReceteListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\ReceteListForm.Designer.cs">
+      <DependentUpon>ReceteListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RezervasyonForms\RezervasyonEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RezervasyonForms\RezervasyonEditForm.Designer.cs">
+      <DependentUpon>RezervasyonEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RezervasyonForms\RezervasyonListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RezervasyonForms\RezervasyonListForm.Designer.cs">
+      <DependentUpon>RezervasyonListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesOfferItemsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesOfferItemsListForm.Designer.cs">
+      <DependentUpon>SalesOfferItemsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesTables\SalesTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesTables\SalesTable.Designer.cs">
+      <DependentUpon>SalesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesTables\SalesOfferTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SalesTables\SalesOfferTable.Designer.cs">
+      <DependentUpon>SalesOfferTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SatisForms\SatisEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SatisForms\SatisEditForm.Designer.cs">
+      <DependentUpon>SatisEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SatisTeklifEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalesForms\SatisTeklifEditForm.Designer.cs">
+      <DependentUpon>SatisTeklifEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaSiparisForms\PurchaseOrderEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaSiparisForms\PurchaseOrderEditForm.Designer.cs">
+      <DependentUpon>PurchaseOrderEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemandItemsFeatureTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemandItemsFeatureTable.Designer.cs">
+      <DependentUpon>PurchaseDemandItemsFeatureTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaTeklifForms\PurchaseOfferEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaTeklifForms\PurchaseOfferEditForm.Designer.cs">
+      <DependentUpon>PurchaseOfferEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaTeklifForms\PurchaseOfferListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaTeklifForms\PurchaseOfferListForm.Designer.cs">
+      <DependentUpon>PurchaseOfferListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemandItemsManagerComfirmListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemandItemsManagerComfirmListForm.Designer.cs">
+      <DependentUpon>PurchaseDemandItemsManagerComfirmListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemanItemsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemanItemsListForm.Designer.cs">
+      <DependentUpon>PurchaseDemanItemsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemandListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemandListForm.Designer.cs">
+      <DependentUpon>PurchaseDemandListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemanEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemanEditForm.Designer.cs">
+      <DependentUpon>PurchaseDemanEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ServisForms\ServisEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ServisForms\ServisEditForm.Designer.cs">
+      <DependentUpon>ServisEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ServisForms\ServisListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ServisForms\ServisListForm.Designer.cs">
+      <DependentUpon>ServisListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaSiparisForms\OrderInformationsMultiSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaSiparisForms\OrderInformationsMultiSelectForm.Designer.cs">
+      <DependentUpon>OrderInformationsMultiSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StokForms\StokEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StokForms\StokEditForm.Designer.cs">
+      <DependentUpon>StokEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StokForms\StokHareketleriListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StokForms\StokHareketleriListForm.Designer.cs">
+      <DependentUpon>StokHareketleriListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StokForms\StokListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StokForms\StokListForm.Designer.cs">
+      <DependentUpon>StokListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\DepoStokEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WarehouseProccesForms\DepoStokEditForm.Designer.cs">
+      <DependentUpon>DepoStokEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubeForms\SubeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubeForms\SubeEditForm.Designer.cs">
+      <DependentUpon>SubeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubeForms\SubeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubeForms\SubeListForm.Designer.cs">
+      <DependentUpon>SubeListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TahakkukForms\TahakkukEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TahakkukForms\TahakkukEditForm.Designer.cs">
+      <DependentUpon>TahakkukEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TahakkukForms\TahakkukListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TahakkukForms\TahakkukListForm.Designer.cs">
+      <DependentUpon>TahakkukListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TahakkukForms\TopluOdemePlaniEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TahakkukForms\TopluOdemePlaniEditForm.Designer.cs">
+      <DependentUpon>TopluOdemePlaniEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\UretimSonuKayıtForms\Pasif\UretimSonuKayitEditFormPasif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\UretimSonuKayıtForms\Pasif\UretimSonuKayitEditFormPasif.Designer.cs">
+      <DependentUpon>UretimSonuKayitEditFormPasif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\UretimSonuKayıtForms\UretimSonuKayitListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\UretimSonuKayıtForms\UretimSonuKayitListForm.Designer.cs">
+      <DependentUpon>UretimSonuKayitListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\UrunTalepForms\ProductionDemandEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\UrunTalepForms\ProductionDemandEditForm.Designer.cs">
+      <DependentUpon>ProductionDemandEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\UrunTalepForms\ProductionDemandListFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\UrunTalepForms\ProductionDemandListFrom.Designer.cs">
+      <DependentUpon>ProductionDemandListFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyCalcEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyCardEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyChekedComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyCheckEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyColorPickEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyDataLayoutControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyDateEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyEmailTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyFilterControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyHyperlinkLabelControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyIbanTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyKodTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyLookUpEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyMemoEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyPictureEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MySimpleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MySpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyTcKimlikNoTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyTelefonNoTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyToogleSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Controls\MyXtraReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Grid\MyGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Navigators\InsUpNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Navigators\InsUpNavigator.Designer.cs">
+      <DependentUpon>InsUpNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\Navigators\LongNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Navigators\LongNavigator.Designer.cs">
+      <DependentUpon>LongNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\Navigators\SmallNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Navigators\SmallNavigator.Designer.cs">
+      <DependentUpon>SmallNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\Navigators\XtraUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\Navigators\XtraUserControl1.Designer.cs">
+      <DependentUpon>XtraUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\Base\BaseTablo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\Base\BaseTablo.Designer.cs">
+      <DependentUpon>BaseTablo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\DepoStokEditFormTable\DepolarArasiTransferBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\DepoStokEditFormTable\DepolarArasiTransferBilgileriTable.Designer.cs">
+      <DependentUpon>DepolarArasiTransferBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\DepoStokEditFormTable\DepoStokDuzeltTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\DepoStokEditFormTable\DepoStokDuzeltTable.Designer.cs">
+      <DependentUpon>DepoStokDuzeltTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\DepoStokEditFormTable\DepoStokTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\DepoStokEditFormTable\DepoStokTable.Designer.cs">
+      <DependentUpon>DepoStokTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\FaturaEditFormTable\FaturaPlaniTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\FaturaEditFormTable\FaturaPlaniTable.Designer.cs">
+      <DependentUpon>FaturaPlaniTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\FaturaEditFormTable\FaturaTahakkukTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\FaturaEditFormTable\FaturaTahakkukTable.Designer.cs">
+      <DependentUpon>FaturaTahakkukTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\GenelEditFormTable\MakbuzHareketleriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\GenelEditFormTable\MakbuzHareketleriTable.Designer.cs">
+      <DependentUpon>MakbuzHareketleriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\GenelEditFormTable\RolYetkileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\GenelEditFormTable\RolYetkileriTable.Designer.cs">
+      <DependentUpon>RolYetkileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\GenelEditFormTable\TatilBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\GenelEditFormTable\TatilBilgileriTable.Designer.cs">
+      <DependentUpon>TatilBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\GenelEditFormTable\VardiyaBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\GenelEditFormTable\VardiyaBilgileriTable.Designer.cs">
+      <DependentUpon>VardiyaBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\IndirimEditFormTable\IndiriminUygulanacagiHizmetlerTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\IndirimEditFormTable\IndiriminUygulanacagiHizmetlerTable.Designer.cs">
+      <DependentUpon>IndiriminUygulanacagiHizmetlerTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\IstasyonEditFormTable\IstasyonOperasyonBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\IstasyonEditFormTable\IstasyonOperasyonBilgileriTable.Designer.cs">
+      <DependentUpon>IstasyonOperasyonBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\IstasyonEditFormTable\Istasyon_Makina_Personel_BilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\IstasyonEditFormTable\Istasyon_Makina_Personel_BilgileriTable.Designer.cs">
+      <DependentUpon>Istasyon_Makina_Personel_BilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\IstasyonEditFormTable\Makina_MakinaElemenlari_BilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\IstasyonEditFormTable\Makina_MakinaElemenlari_BilgileriTable.Designer.cs">
+      <DependentUpon>Makina_MakinaElemenlari_BilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\KullaniciBirimYetkileriEditFormTable\DonemTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\KullaniciBirimYetkileriEditFormTable\DonemTable.Designer.cs">
+      <DependentUpon>DonemTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\KullaniciBirimYetkileriEditFormTable\KullaniciTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\KullaniciBirimYetkileriEditFormTable\KullaniciTable.Designer.cs">
+      <DependentUpon>KullaniciTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\KullaniciBirimYetkileriEditFormTable\SubeTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\KullaniciBirimYetkileriEditFormTable\SubeTable.Designer.cs">
+      <DependentUpon>SubeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MrpEditFormTable\MrpBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MrpEditFormTable\MrpBilgileriTable.Designer.cs">
+      <DependentUpon>MrpBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\CRPEditTables\MrpMakinaBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\CRPForms\CRPEditTables\MrpMakinaBilgileriTable.Designer.cs">
+      <DependentUpon>MrpMakinaBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MrpEditFormTable\MrpRezervasyonBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MrpEditFormTable\MrpRezervasyonBilgileriTable.Designer.cs">
+      <DependentUpon>MrpRezervasyonBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MrpEditFormTable\MrpReceteBilesenBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\MrpForms\MrpEditFormTable\MrpReceteBilesenBilgileriTable.Designer.cs">
+      <DependentUpon>MrpReceteBilesenBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\ReceteEditFormTable\ReceteBilesenBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\ReceteEditFormTable\ReceteBilesenBilgileriTable.Designer.cs">
+      <DependentUpon>ReceteBilesenBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\ReceteEditFormTable\ReceteMakinaElemaniBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\ReceteEditFormTable\ReceteMakinaElemaniBilgileriTable.Designer.cs">
+      <DependentUpon>ReceteMakinaElemaniBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\ReceteEditFormTable\ReceteOperasyonMakinaBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\ReceteForms\ReceteEditFormTable\ReceteOperasyonMakinaBilgileriTable.Designer.cs">
+      <DependentUpon>ReceteOperasyonMakinaBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaTeklifForms\PurchaseOfferTables\PurchaseOfferEditFormTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\SatinalmaTeklifForms\PurchaseOfferTables\PurchaseOfferEditFormTable.Designer.cs">
+      <DependentUpon>PurchaseOfferEditFormTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemanTables\SatinalmaTalepEditFormTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemanTables\SatinalmaTalepEditFormTable.Designer.cs">
+      <DependentUpon>SatinalmaTalepEditFormTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\SatinalmaFormTables\SatinalmaTeklifAlinanFirmalarTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\SatinalmaFormTables\SatinalmaTeklifAlinanFirmalarTable.Designer.cs">
+      <DependentUpon>SatinalmaTeklifAlinanFirmalarTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\SatisEditFormTable\SatisKalemleriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\SatisEditFormTable\SatisKalemleriTable.Designer.cs">
+      <DependentUpon>SatisKalemleriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TalepTables\ProductionDemandTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TalepTables\ProductionDemandTable.Designer.cs">
+      <DependentUpon>ProductionDemandTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TalepTables\SiparisEditFormTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TalepTables\SiparisEditFormTable.Designer.cs">
+      <DependentUpon>SiparisEditFormTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\BilgiNotlariTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\BilgiNotlariTable.Designer.cs">
+      <DependentUpon>BilgiNotlariTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\EPosBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\EPosBilgileriTable.Designer.cs">
+      <DependentUpon>EPosBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\GeriOdemeBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\GeriOdemeBilgileriTable.Designer.cs">
+      <DependentUpon>GeriOdemeBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\HizmetBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\HizmetBilgileriTable.Designer.cs">
+      <DependentUpon>HizmetBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\IletisimBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\IletisimBilgileriTable.Designer.cs">
+      <DependentUpon>IletisimBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\IndirimBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\IndirimBilgileriTable.Designer.cs">
+      <DependentUpon>IndirimBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\KardesBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\KardesBilgileriTable.Designer.cs">
+      <DependentUpon>KardesBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\OdemeBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\OdemeBilgileriTable.Designer.cs">
+      <DependentUpon>OdemeBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\PromosyonBilgileriTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\TahakkukEditFormTable\PromosyonBilgileriTable.Designer.cs">
+      <DependentUpon>PromosyonBilgileriTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\UretimSonuKayitEditFormTable\UretimSonuKayitTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\UserControl\UretimSonuKayitEditFormTable\UretimSonuKayitTable.Designer.cs">
+      <DependentUpon>UretimSonuKayitTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\VardiyaForms\VardiyaLastVersionEditFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\VardiyaForms\VardiyaLastVersionEditFrom.Designer.cs">
+      <DependentUpon>VardiyaLastVersionEditFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\VardiyaForms\VardiyaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\VardiyaForms\VardiyaListForm.Designer.cs">
+      <DependentUpon>VardiyaListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\VardiyaForms\VardiyaEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\VardiyaForms\VardiyaEditForm.Designer.cs">
+      <DependentUpon>VardiyaEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\VardiyaForms\VardiyaSistemEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionManagement\VardiyaForms\VardiyaSistemEditForm.Designer.cs">
+      <DependentUpon>VardiyaSistemEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WayBillForms\SaleWayBillForms\DispatchWayBillTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\WayBillForms\SaleWayBillForms\DispatchWayBillTable.Designer.cs">
+      <DependentUpon>DispatchWayBillTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WayBillForms\SaleWayBillForms\DispatchWayBillEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WayBillForms\SaleWayBillForms\DispatchWayBillEditForm.Designer.cs">
+      <DependentUpon>DispatchWayBillEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WayBillForms\SaleWayBillForms\DispatchWayBillListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WayBillForms\SaleWayBillForms\DispatchWayBillListForm.Designer.cs">
+      <DependentUpon>DispatchWayBillListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\BirimForms\BirimEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\BirimForms\BirimEditForm.Designer.cs">
+      <DependentUpon>BirimEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\BirimForms\BirimListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\BirimForms\BirimListForm.Designer.cs">
+      <DependentUpon>BirimListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\Country\CountryEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\Country\CountryEditForm.Designer.cs">
+      <DependentUpon>CountryEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\Country\CountryListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\Country\CountryListForm.Designer.cs">
+      <DependentUpon>CountryListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\DefinationsForms\DefinationAndFeatureEditTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\DefinationsForms\DefinationAndFeatureEditTable.Designer.cs">
+      <DependentUpon>DefinationAndFeatureEditTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\DefinationsForms\DefinationAndFeaturesEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\DefinationsForms\DefinationAndFeaturesEditForm.Designer.cs">
+      <DependentUpon>DefinationAndFeaturesEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\FeaturesForms\FeaturesEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\FeaturesForms\FeaturesEditForm.Designer.cs">
+      <DependentUpon>FeaturesEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\FeaturesForms\FeaturesListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\FeaturesForms\FeaturesListForm.Designer.cs">
+      <DependentUpon>FeaturesListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\FeaturesForms\FeaturesTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\FeaturesForms\FeaturesTable.Designer.cs">
+      <DependentUpon>FeaturesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\DefinationsForms\DefinationsEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\DefinationsForms\DefinationsEditForm.Designer.cs">
+      <DependentUpon>DefinationsEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\DefinationsForms\DefinationsTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\DefinationsForms\DefinationsTable.Designer.cs">
+      <DependentUpon>DefinationsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\DovizForms\DovizEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\DovizForms\DovizEditForm.Designer.cs">
+      <DependentUpon>DovizEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\DovizForms\DovizListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\DovizForms\DovizListForm.Designer.cs">
+      <DependentUpon>DovizListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\EvrakTurleriForms\EvrakTurleriEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\EvrakTurleriForms\EvrakTurleriEditForm.Designer.cs">
+      <DependentUpon>EvrakTurleriEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\EvrakTurleriForms\EvrakTurleriEditTablo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\EvrakTurleriForms\EvrakTurleriEditTablo.Designer.cs">
+      <DependentUpon>EvrakTurleriEditTablo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\EvrakTurleriForms\KdvListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\EvrakTurleriForms\KdvListForm.Designer.cs">
+      <DependentUpon>KdvListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\KdvOranlariForms\KdvEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\KdvOranlariForms\KdvEditForm.Designer.cs">
+      <DependentUpon>KdvEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\LanguageForms\LanguageEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\LanguageForms\LanguageEditForm.Designer.cs">
+      <DependentUpon>LanguageEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\LanguageForms\LanguageEditFormTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\LanguageForms\LanguageEditFormTable.Designer.cs">
+      <DependentUpon>LanguageEditFormTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\PackagingTableAndForm\PackagingEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\PackagingTableAndForm\PackagingEditForm.Designer.cs">
+      <DependentUpon>PackagingEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\PackagingTableAndForm\PackagingEditFormTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\PackagingTableAndForm\PackagingEditFormTable.Designer.cs">
+      <DependentUpon>PackagingEditFormTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\PaymentMethodForms\PaymentMethodEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\PaymentMethodForms\PaymentMethodEditForm.Designer.cs">
+      <DependentUpon>PaymentMethodEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\PaymentMethodForms\PaymentMethodEditFormTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\PaymentMethodForms\PaymentMethodEditFormTable.Designer.cs">
+      <DependentUpon>PaymentMethodEditFormTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\SevkiyatSekilleriForm\SevkiyatSekilleriEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\SevkiyatSekilleriForm\SevkiyatSekilleriEditForm.Designer.cs">
+      <DependentUpon>SevkiyatSekilleriEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\SevkiyatSekilleriForm\SevkiyatSekilleriListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YardımciTablolar\GenelTablolar\SevkiyatSekilleriForm\SevkiyatSekilleriListForm.Designer.cs">
+      <DependentUpon>SevkiyatSekilleriListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\GetEntityOrListOfAnyTableFunction.cs" />
+    <Compile Include="Functions\FileFunctions.cs" />
+    <Compile Include="Functions\FilterFunctions.cs" />
+    <Compile Include="Functions\GeneralFunctions.cs" />
+    <Compile Include="Functions\MrpCalistirFunctions.cs" />
+    <Compile Include="Functions\SelectFunctions.cs" />
+    <Compile Include="Functions\SelectPictureFunctions.cs" />
+    <Compile Include="Functions\SelectRepositoryFunctions.cs" />
+    <Compile Include="Functions\SelectRowFunctions.cs" />
+    <Compile Include="Functions\StackFunction.cs" />
+    <Compile Include="Functions\TablePrintingFunctions.cs" />
+    <Compile Include="Functions\VeriAktarimFunctions.cs" />
+    <Compile Include="GeneralForms\AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\BaglantiAyarlariEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\BaglantiAyarlariEditForm.Designer.cs">
+      <DependentUpon>BaglantiAyarlariEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\Baslatiliyor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\Baslatiliyor.Designer.cs">
+      <DependentUpon>Baslatiliyor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\BekleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\BekleForm.Designer.cs">
+      <DependentUpon>BekleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\DonemParametreEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\DonemParametreEditForm.Designer.cs">
+      <DependentUpon>DonemParametreEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\EMailParametreEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\EMailParametreEditForm.Designer.cs">
+      <DependentUpon>EMailParametreEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\GirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\GirisForm.Designer.cs">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\KullaniciParametreleriEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\KullaniciParametreleriEditForm.Designer.cs">
+      <DependentUpon>KullaniciParametreleriEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\KurumBilgileriEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\KurumBilgileriEditForm.Designer.cs">
+      <DependentUpon>KurumBilgileriEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\RaporOnizlem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\RaporOnizlem.Designer.cs">
+      <DependentUpon>RaporOnizlem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\RaporSecim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\RaporSecim.Designer.cs">
+      <DependentUpon>RaporSecim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\RaporTasarim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\RaporTasarim.Designer.cs">
+      <DependentUpon>RaporTasarim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\SubeDonemSecimEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\SubeDonemSecimEditForm.Designer.cs">
+      <DependentUpon>SubeDonemSecimEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\TabloDokumParametreleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\TabloDokumParametreleri.Designer.cs">
+      <DependentUpon>TabloDokumParametreleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\TatilParametreEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\TatilParametreEditForm.Designer.cs">
+      <DependentUpon>TatilParametreEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\VeriAktarimListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\VeriAktarimListForm.Designer.cs">
+      <DependentUpon>VeriAktarimListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IStatusBarAciklama.cs" />
+    <Compile Include="Interfaces\IStatusBarKisaYol.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\FormReports\Base\BaseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FormReports\Base\BaseReport.Designer.cs">
+      <DependentUpon>BaseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\XtraReports\MalzemeIhtiyacPlanlama\IsEmriRaporu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XtraReports\MalzemeIhtiyacPlanlama\IsEmriRaporu.Designer.cs">
+      <DependentUpon>IsEmriRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\XtraReports\Tahakkuk\OgrenciKartiRaporu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XtraReports\Tahakkuk\OgrenciKartiRaporu.Designer.cs">
+      <DependentUpon>OgrenciKartiRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show\Interfaces\IBaseFormShow.cs" />
+    <Compile Include="Show\ShowEditForms.cs" />
+    <Compile Include="Show\ShowEditReports.cs" />
+    <Compile Include="Show\ShowListForms.cs" />
+    <Compile Include="Show\ShowRibbonForms.cs" />
+    <EmbeddedResource Include="Forms\AvukatForms\AvukatEditForm.resx">
+      <DependentUpon>AvukatEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AvukatForms\AvukatListForm.resx">
+      <DependentUpon>AvukatListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaForms\BankaEditForm.resx">
+      <DependentUpon>BankaEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaForms\BankaListForm.resx">
+      <DependentUpon>BankaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaHesapForms\BankaHesapEditForm.resx">
+      <DependentUpon>BankaHesapEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaHesapForms\BankaHesapListForm.resx">
+      <DependentUpon>BankaHesapListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaSubeForms\BankaSubeEditForm.resx">
+      <DependentUpon>BankaSubeEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaSubeForms\BankaSubeListForm.resx">
+      <DependentUpon>BankaSubeListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseForms\BaseEditForm.resx">
+      <DependentUpon>BaseEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseForms\BaseListForm.resx">
+      <DependentUpon>BaseListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CariForms\CariEditForm.resx">
+      <DependentUpon>CariEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CariForms\CariListForm.resx">
+      <DependentUpon>CariListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CariForms\CompanyTables\AddressItemsTable.resx">
+      <DependentUpon>AddressItemsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CariForms\CompanyTables\CompanyContactTable.resx">
+      <DependentUpon>CompanyContactTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CariForms\CompanyTables\CompanyRelatedMaterialTable.resx">
+      <DependentUpon>CompanyRelatedMaterialTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CariForms\CompanyTables\CompanyPriceListTable.resx">
+      <DependentUpon>CompanyPriceListTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\CRPForms\CRPEditTables\PlanlanmisMalzemeKalemleriTable.resx">
+      <DependentUpon>PlanlanmisMalzemeKalemleriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\CRPForms\IsEmriForms\IsEmriEditForm.resx">
+      <DependentUpon>IsEmriEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\CRPForms\IsEmriForms\IsEmriListForm.resx">
+      <DependentUpon>IsEmriListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\CRPForms\IsEmriForms\IsEmriTables\BagliMalzemeKalemleriTable.resx">
+      <DependentUpon>BagliMalzemeKalemleriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\CRPForms\IsEmriForms\IsEmriTables\WorkOrderMaterialTable.resx">
+      <DependentUpon>WorkOrderMaterialTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\CRPForms\KapasiteIhtiyacListForm.resx">
+      <DependentUpon>KapasiteIhtiyacListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\MrpForms\MalzemeIhtiyacKalemleriListForm.resx">
+      <DependentUpon>MalzemeIhtiyacKalemleriListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\ReceteForms\ReceteEditFormTable\ReceteOperasyonBilgiTable.resx">
+      <DependentUpon>ReceteOperasyonBilgiTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\UretimSonuKayıtForms\UretimSonuKayitEditForm.resx">
+      <DependentUpon>UretimSonuKayitEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StokForms\MaterialTables\MaterialUnitsTable.resx">
+      <DependentUpon>MaterialUnitsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\DATMalzemeIhtiyaclariListForm.resx">
+      <DependentUpon>DATMalzemeIhtiyaclariListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\DATStokListForm.resx">
+      <DependentUpon>DATStokListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferDemandItemsListForm.resx">
+      <DependentUpon>TransferDemandItemsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferDemandBetweenWarehousesListFrom.resx">
+      <DependentUpon>TransferDemandBetweenWarehousesListFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferDemandBetweenWarehouseTable.resx">
+      <DependentUpon>TransferDemandBetweenWarehouseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferDemandBetweenWarehousesEditForm.resx">
+      <DependentUpon>TransferDemandBetweenWarehousesEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\WarehouseForms\WarehouseEditForm.resx">
+      <DependentUpon>WarehouseEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferBetweenWarehousesEditForm.resx">
+      <DependentUpon>TransferBetweenWarehousesEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\TransferBetweenWarehousesForms\TransferBetweenWarehousesListFrom.resx">
+      <DependentUpon>TransferBetweenWarehousesListFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\WarehouseForms\WarehouseListForm.resx">
+      <DependentUpon>WarehouseListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\DepoStokDuzeltEditForm.resx">
+      <DependentUpon>DepoStokDuzeltEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\DepoStokListForm.resx">
+      <DependentUpon>DepoStokListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DonemForms\DonemEditForm.resx">
+      <DependentUpon>DonemEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DonemForms\DonemListForm.resx">
+      <DependentUpon>DonemListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EvrakForms\EvrakEditForm.resx">
+      <DependentUpon>EvrakEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EvrakForms\EvrakListForm.resx">
+      <DependentUpon>EvrakListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FaturaForms\FaturaPlaniEditForm.resx">
+      <DependentUpon>FaturaPlaniEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FaturaForms\FaturaPlaniListForm.resx">
+      <DependentUpon>FaturaPlaniListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FaturaForms\FaturaTahakkukEditForm.resx">
+      <DependentUpon>FaturaTahakkukEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FaturaForms\TopluFaturaPlaniEditForm.resx">
+      <DependentUpon>TopluFaturaPlaniEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FİltreForms\FiltreEditForm.resx">
+      <DependentUpon>FiltreEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FİltreForms\FiltreListForm.resx">
+      <DependentUpon>FiltreListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GorevForms\GorevEditForm.resx">
+      <DependentUpon>GorevEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GorevForms\GorevListForm.resx">
+      <DependentUpon>GorevListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HizmetForms\HizmetEditForm.resx">
+      <DependentUpon>HizmetEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HizmetForms\HizmetListForm.resx">
+      <DependentUpon>HizmetListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HizmetTuruForms\HizmetTuruEditForm.resx">
+      <DependentUpon>HizmetTuruEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HizmetTuruForms\HizmetTuruListForm.resx">
+      <DependentUpon>HizmetTuruListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IlceForms\IlceEditForm.resx">
+      <DependentUpon>IlceEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IlceForms\IlceListForm.resx">
+      <DependentUpon>IlceListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IletisimForms\IletisimEditForm.resx">
+      <DependentUpon>IletisimEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IletisimForms\IletisimListForm.resx">
+      <DependentUpon>IletisimListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IlForms\IlEditForm.resx">
+      <DependentUpon>IlEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IlForms\IlListForm.resx">
+      <DependentUpon>IlListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IndirimForms\IndirimEditForm.resx">
+      <DependentUpon>IndirimEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IndirimForms\IndirimListForm.resx">
+      <DependentUpon>IndirimListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IndirimTuruForms\IndirimTuruEditForm.resx">
+      <DependentUpon>IndirimTuruEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IndirimTuruForms\IndirimTuruListForm.resx">
+      <DependentUpon>IndirimTuruListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IptalNedeniForms\IptalNedeniEditForm.resx">
+      <DependentUpon>IptalNedeniEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IptalNedeniForms\IptalNedeniListForm.resx">
+      <DependentUpon>IptalNedeniListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\IstasyonForms\IstasyonEditForm.resx">
+      <DependentUpon>IstasyonEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\IstasyonForms\IstasyonListForm.resx">
+      <DependentUpon>IstasyonListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\IstasyonForms\IstasyonOperasyonBilgileriListForm.resx">
+      <DependentUpon>IstasyonOperasyonBilgileriListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IsyeriForms\IsyeriEditForm.resx">
+      <DependentUpon>IsyeriEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IsyeriForms\IsyeriListFOrm.resx">
+      <DependentUpon>IsyeriListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KasaForms\KasaEditForm.resx">
+      <DependentUpon>KasaEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KasaForms\KasaListForm.resx">
+      <DependentUpon>KasaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForms\KullaniciBirimYetkileriEditForm.resx">
+      <DependentUpon>KullaniciBirimYetkileriEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForms\KullaniciEditForm.resx">
+      <DependentUpon>KullaniciEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForms\KullaniciListForm.resx">
+      <DependentUpon>KullaniciListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForms\RolEditForm.resx">
+      <DependentUpon>RolEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForms\RolListForm.resx">
+      <DependentUpon>RolListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForms\RolYetkiKartlariListForm.resx">
+      <DependentUpon>RolYetkiKartlariListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForms\SifreDegistirEditForm.resx">
+      <DependentUpon>SifreDegistirEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForms\SifremiUnuttumEditForm.resx">
+      <DependentUpon>SifremiUnuttumEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MakbuzForms\BelgeHareketleriListForm.resx">
+      <DependentUpon>BelgeHareketleriListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MakbuzForms\BelgeSecimListForm.resx">
+      <DependentUpon>BelgeSecimListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MakbuzForms\MakbuzEditForm.resx">
+      <DependentUpon>MakbuzEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MakbuzForms\MakbuzListForm.resx">
+      <DependentUpon>MakbuzListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\MakinaForms\MakinaEditForm.resx">
+      <DependentUpon>MakinaEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\MakinaForms\MakinaListForm.resx">
+      <DependentUpon>MakinaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MeslekForms\MeslekEditForm.resx">
+      <DependentUpon>MeslekEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MeslekForms\MeslekListForm.resx">
+      <DependentUpon>MeslekListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\CRPForms\IsEmriRaporSecimListForm.resx">
+      <DependentUpon>IsEmriRaporSecimListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\CRPForms\MalzemeIhtiyacBolEditForm.resx">
+      <DependentUpon>MalzemeIhtiyacBolEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\CRPForms\MalzemeIhtiyacPlanlamaEditForm.resx">
+      <DependentUpon>MalzemeIhtiyacPlanlamaEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\MrpForms\MrpRezervasyonSecimList.resx">
+      <DependentUpon>MrpRezervasyonSecimList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonelForms\PersonelEditForm.resx">
+      <DependentUpon>PersonelEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonelForms\PersonelListForm.resx">
+      <DependentUpon>PersonelListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\OperasyonForms\OperasyonEditForm.resx">
+      <DependentUpon>OperasyonEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\OperasyonForms\OperasyonListForm.resx">
+      <DependentUpon>OperasyonListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OzelKodForms\OzelKodEditForm.resx">
+      <DependentUpon>OzelKodEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OzelKodForms\OzelKodListForm.resx">
+      <DependentUpon>OzelKodListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PriceListForms\PriceListEditForm.resx">
+      <DependentUpon>PriceListEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PriceListForms\PriceListComfirmOrCancelForm.resx">
+      <DependentUpon>PriceListComfirmOrCancelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PriceListForms\PriceListListForm.resx">
+      <DependentUpon>PriceListListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PriceListForms\PriceListTables\PriceListEditTable.resx">
+      <DependentUpon>PriceListEditTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\PurchaseSettingsForms\PurchaseSettingsForm.resx">
+      <DependentUpon>PurchaseSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\SatinalmaSiparisForms\PurchaseOrderItemsListForm.resx">
+      <DependentUpon>PurchaseOrderItemsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalesForms\SalesEditForm.resx">
+      <DependentUpon>SalesEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalesForms\SalesItemsListForm.resx">
+      <DependentUpon>SalesItemsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalesForms\SalesOfferItemsListForm.resx">
+      <DependentUpon>SalesOfferItemsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalesForms\SalesListForm.resx">
+      <DependentUpon>SalesListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalesForms\SalesOfferListForm.resx">
+      <DependentUpon>SalesOfferListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalesForms\SalesOfferEditForm.resx">
+      <DependentUpon>SalesOfferEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\WarehouseSettingsForms\WarehouseSettingsForm.resx">
+      <DependentUpon>WarehouseSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\WarehouseSettingsForms\WarehouseSettingsTable.resx">
+      <DependentUpon>WarehouseSettingsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WayBillForms\PurchaseWayBillTable.resx">
+      <DependentUpon>PurchaseWayBillTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WayBillForms\PurchaseWayBillEditForm.resx">
+      <DependentUpon>PurchaseWayBillEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\SatinalmaSiparisForms\PurchaseOrderListForm.resx">
+      <DependentUpon>PurchaseOrderListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\SatinalmaSiparisForms\PurchaseOrderTable.resx">
+      <DependentUpon>PurchaseOrderTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\SatinalmaTeklifForms\PurchaseOfferItemsListForm.resx">
+      <DependentUpon>PurchaseOfferItemsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WayBillForms\PurchaseWayBillListForm.resx">
+      <DependentUpon>PurchaseWayBillListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RaporForms\RaporEditForm.resx">
+      <DependentUpon>RaporEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RaporForms\RaporListForm.resx">
+      <DependentUpon>RaporListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\MrpForms\MalzemeIhtiyaclarıListForm.resx">
+      <DependentUpon>MalzemeIhtiyaclarıListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\MrpForms\MrpEditForm.resx">
+      <DependentUpon>MrpEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\MrpForms\MrpListForm.resx">
+      <DependentUpon>MrpListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\ReceteForms\MakinaElemanlariListForm.resx">
+      <DependentUpon>MakinaElemanlariListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\ReceteForms\OperasyonaBagliTuketilecekReceteBilesenleriList.resx">
+      <DependentUpon>OperasyonaBagliTuketilecekReceteBilesenleriList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\ReceteForms\OperasyonMakinaBilgileriListForm.resx">
+      <DependentUpon>OperasyonMakinaBilgileriListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\ReceteForms\ReceteEditForm.resx">
+      <DependentUpon>ReceteEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\ReceteForms\ReceteListForm.resx">
+      <DependentUpon>ReceteListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RezervasyonForms\RezervasyonEditForm.resx">
+      <DependentUpon>RezervasyonEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RezervasyonForms\RezervasyonListForm.resx">
+      <DependentUpon>RezervasyonListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalesForms\SalesTables\SalesTable.resx">
+      <DependentUpon>SalesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalesForms\SalesTables\SalesOfferTable.resx">
+      <DependentUpon>SalesOfferTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SatisForms\SatisEditForm.resx">
+      <DependentUpon>SatisEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalesForms\SatisTeklifEditForm.resx">
+      <DependentUpon>SatisTeklifEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\SatinalmaSiparisForms\PurchaseOrderEditForm.resx">
+      <DependentUpon>PurchaseOrderEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemandItemsFeatureTable.resx">
+      <DependentUpon>PurchaseDemandItemsFeatureTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\SatinalmaTeklifForms\PurchaseOfferEditForm.resx">
+      <DependentUpon>PurchaseOfferEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\SatinalmaTeklifForms\PurchaseOfferListForm.resx">
+      <DependentUpon>PurchaseOfferListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemandItemsManagerComfirmListForm.resx">
+      <DependentUpon>PurchaseDemandItemsManagerComfirmListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemanItemsListForm.resx">
+      <DependentUpon>PurchaseDemanItemsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemandListForm.resx">
+      <DependentUpon>PurchaseDemandListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemanEditForm.resx">
+      <DependentUpon>PurchaseDemanEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ServisForms\ServisEditForm.resx">
+      <DependentUpon>ServisEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ServisForms\ServisListForm.resx">
+      <DependentUpon>ServisListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\SatinalmaSiparisForms\OrderInformationsMultiSelectForm.resx">
+      <DependentUpon>OrderInformationsMultiSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StokForms\StokEditForm.resx">
+      <DependentUpon>StokEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StokForms\StokHareketleriListForm.resx">
+      <DependentUpon>StokHareketleriListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StokForms\StokListForm.resx">
+      <DependentUpon>StokListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WarehouseProccesForms\DepoStokEditForm.resx">
+      <DependentUpon>DepoStokEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubeForms\SubeEditForm.resx">
+      <DependentUpon>SubeEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubeForms\SubeListForm.resx">
+      <DependentUpon>SubeListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TahakkukForms\TahakkukEditForm.resx">
+      <DependentUpon>TahakkukEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TahakkukForms\TahakkukListForm.resx">
+      <DependentUpon>TahakkukListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TahakkukForms\TopluOdemePlaniEditForm.resx">
+      <DependentUpon>TopluOdemePlaniEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\UretimSonuKayıtForms\Pasif\UretimSonuKayitEditFormPasif.resx">
+      <DependentUpon>UretimSonuKayitEditFormPasif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\UretimSonuKayıtForms\UretimSonuKayitListForm.resx">
+      <DependentUpon>UretimSonuKayitListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\UrunTalepForms\ProductionDemandEditForm.resx">
+      <DependentUpon>ProductionDemandEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\UrunTalepForms\ProductionDemandListFrom.resx">
+      <DependentUpon>ProductionDemandListFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\Controls\MyXtraReport.resx">
+      <DependentUpon>MyXtraReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\Navigators\InsUpNavigator.resx">
+      <DependentUpon>InsUpNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\Navigators\LongNavigator.resx">
+      <DependentUpon>LongNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\Navigators\SmallNavigator.resx">
+      <DependentUpon>SmallNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\Navigators\XtraUserControl1.resx">
+      <DependentUpon>XtraUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\Base\BaseTablo.resx">
+      <DependentUpon>BaseTablo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\DepoStokEditFormTable\DepolarArasiTransferBilgileriTable.resx">
+      <DependentUpon>DepolarArasiTransferBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\DepoStokEditFormTable\DepoStokDuzeltTable.resx">
+      <DependentUpon>DepoStokDuzeltTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\DepoStokEditFormTable\DepoStokTable.resx">
+      <DependentUpon>DepoStokTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\FaturaEditFormTable\FaturaPlaniTable.resx">
+      <DependentUpon>FaturaPlaniTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\FaturaEditFormTable\FaturaTahakkukTable.resx">
+      <DependentUpon>FaturaTahakkukTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\GenelEditFormTable\MakbuzHareketleriTable.resx">
+      <DependentUpon>MakbuzHareketleriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\GenelEditFormTable\RolYetkileriTable.resx">
+      <DependentUpon>RolYetkileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\GenelEditFormTable\TatilBilgileriTable.resx">
+      <DependentUpon>TatilBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\GenelEditFormTable\VardiyaBilgileriTable.resx">
+      <DependentUpon>VardiyaBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\IndirimEditFormTable\IndiriminUygulanacagiHizmetlerTable.resx">
+      <DependentUpon>IndiriminUygulanacagiHizmetlerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\IstasyonEditFormTable\IstasyonOperasyonBilgileriTable.resx">
+      <DependentUpon>IstasyonOperasyonBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\IstasyonEditFormTable\Istasyon_Makina_Personel_BilgileriTable.resx">
+      <DependentUpon>Istasyon_Makina_Personel_BilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\IstasyonEditFormTable\Makina_MakinaElemenlari_BilgileriTable.resx">
+      <DependentUpon>Makina_MakinaElemenlari_BilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\KullaniciBirimYetkileriEditFormTable\DonemTable.resx">
+      <DependentUpon>DonemTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\KullaniciBirimYetkileriEditFormTable\KullaniciTable.resx">
+      <DependentUpon>KullaniciTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\KullaniciBirimYetkileriEditFormTable\SubeTable.resx">
+      <DependentUpon>SubeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\MrpForms\MrpEditFormTable\MrpBilgileriTable.resx">
+      <DependentUpon>MrpBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\CRPForms\CRPEditTables\MrpMakinaBilgileriTable.resx">
+      <DependentUpon>MrpMakinaBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\MrpForms\MrpEditFormTable\MrpRezervasyonBilgileriTable.resx">
+      <DependentUpon>MrpRezervasyonBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\MrpForms\MrpEditFormTable\MrpReceteBilesenBilgileriTable.resx">
+      <DependentUpon>MrpReceteBilesenBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\ReceteForms\ReceteEditFormTable\ReceteBilesenBilgileriTable.resx">
+      <DependentUpon>ReceteBilesenBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\ReceteForms\ReceteEditFormTable\ReceteMakinaElemaniBilgileriTable.resx">
+      <DependentUpon>ReceteMakinaElemaniBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\ReceteForms\ReceteEditFormTable\ReceteOperasyonMakinaBilgileriTable.resx">
+      <DependentUpon>ReceteOperasyonMakinaBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\SatinalmaTeklifForms\PurchaseOfferTables\PurchaseOfferEditFormTable.resx">
+      <DependentUpon>PurchaseOfferEditFormTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PurchaseForms\PurchaseDemandForms\PurchaseDemanTables\SatinalmaTalepEditFormTable.resx">
+      <DependentUpon>SatinalmaTalepEditFormTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\SatinalmaFormTables\SatinalmaTeklifAlinanFirmalarTable.resx">
+      <DependentUpon>SatinalmaTeklifAlinanFirmalarTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\SatisEditFormTable\SatisKalemleriTable.resx">
+      <DependentUpon>SatisKalemleriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\TalepTables\ProductionDemandTable.resx">
+      <DependentUpon>ProductionDemandTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\TalepTables\SiparisEditFormTable.resx">
+      <DependentUpon>SiparisEditFormTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\TahakkukEditFormTable\BilgiNotlariTable.resx">
+      <DependentUpon>BilgiNotlariTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\TahakkukEditFormTable\EPosBilgileriTable.resx">
+      <DependentUpon>EPosBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\TahakkukEditFormTable\GeriOdemeBilgileriTable.resx">
+      <DependentUpon>GeriOdemeBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\TahakkukEditFormTable\HizmetBilgileriTable.resx">
+      <DependentUpon>HizmetBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\TahakkukEditFormTable\IletisimBilgileriTable.resx">
+      <DependentUpon>IletisimBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\TahakkukEditFormTable\IndirimBilgileriTable.resx">
+      <DependentUpon>IndirimBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\TahakkukEditFormTable\KardesBilgileriTable.resx">
+      <DependentUpon>KardesBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\TahakkukEditFormTable\OdemeBilgileriTable.resx">
+      <DependentUpon>OdemeBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\TahakkukEditFormTable\PromosyonBilgileriTable.resx">
+      <DependentUpon>PromosyonBilgileriTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\UserControl\UretimSonuKayitEditFormTable\UretimSonuKayitTable.resx">
+      <DependentUpon>UretimSonuKayitTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\VardiyaForms\VardiyaLastVersionEditFrom.resx">
+      <DependentUpon>VardiyaLastVersionEditFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\VardiyaForms\VardiyaListForm.resx">
+      <DependentUpon>VardiyaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\VardiyaForms\VardiyaEditForm.resx">
+      <DependentUpon>VardiyaEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionManagement\VardiyaForms\VardiyaSistemEditForm.resx">
+      <DependentUpon>VardiyaSistemEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WayBillForms\SaleWayBillForms\DispatchWayBillTable.resx">
+      <DependentUpon>DispatchWayBillTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WayBillForms\SaleWayBillForms\DispatchWayBillEditForm.resx">
+      <DependentUpon>DispatchWayBillEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WayBillForms\SaleWayBillForms\DispatchWayBillListForm.resx">
+      <DependentUpon>DispatchWayBillListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\BirimForms\BirimEditForm.resx">
+      <DependentUpon>BirimEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\BirimForms\BirimListForm.resx">
+      <DependentUpon>BirimListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\Country\CountryEditForm.resx">
+      <DependentUpon>CountryEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\Country\CountryListForm.resx">
+      <DependentUpon>CountryListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\DefinationsForms\DefinationAndFeatureEditTable.resx">
+      <DependentUpon>DefinationAndFeatureEditTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\DefinationsForms\DefinationAndFeaturesEditForm.resx">
+      <DependentUpon>DefinationAndFeaturesEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\FeaturesForms\FeaturesEditForm.resx">
+      <DependentUpon>FeaturesEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\FeaturesForms\FeaturesListForm.resx">
+      <DependentUpon>FeaturesListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\FeaturesForms\FeaturesTable.resx">
+      <DependentUpon>FeaturesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\DefinationsForms\DefinationsEditForm.resx">
+      <DependentUpon>DefinationsEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\DefinationsForms\DefinationsTable.resx">
+      <DependentUpon>DefinationsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\DovizForms\DovizEditForm.resx">
+      <DependentUpon>DovizEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\DovizForms\DovizListForm.resx">
+      <DependentUpon>DovizListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\EvrakTurleriForms\EvrakTurleriEditForm.resx">
+      <DependentUpon>EvrakTurleriEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\EvrakTurleriForms\EvrakTurleriEditTablo.resx">
+      <DependentUpon>EvrakTurleriEditTablo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\EvrakTurleriForms\KdvListForm.resx">
+      <DependentUpon>KdvListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\KdvOranlariForms\KdvEditForm.resx">
+      <DependentUpon>KdvEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\LanguageForms\LanguageEditForm.resx">
+      <DependentUpon>LanguageEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\LanguageForms\LanguageEditFormTable.resx">
+      <DependentUpon>LanguageEditFormTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\PackagingTableAndForm\PackagingEditForm.resx">
+      <DependentUpon>PackagingEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\PackagingTableAndForm\PackagingEditFormTable.resx">
+      <DependentUpon>PackagingEditFormTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\PaymentMethodForms\PaymentMethodEditForm.resx">
+      <DependentUpon>PaymentMethodEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\PaymentMethodForms\PaymentMethodEditFormTable.resx">
+      <DependentUpon>PaymentMethodEditFormTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\SevkiyatSekilleriForm\SevkiyatSekilleriEditForm.resx">
+      <DependentUpon>SevkiyatSekilleriEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YardımciTablolar\GenelTablolar\SevkiyatSekilleriForm\SevkiyatSekilleriListForm.resx">
+      <DependentUpon>SevkiyatSekilleriListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\BaglantiAyarlariEditForm.resx">
+      <DependentUpon>BaglantiAyarlariEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\Baslatiliyor.resx">
+      <DependentUpon>Baslatiliyor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\BekleForm.resx">
+      <DependentUpon>BekleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\DonemParametreEditForm.resx">
+      <DependentUpon>DonemParametreEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\EMailParametreEditForm.resx">
+      <DependentUpon>EMailParametreEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\GirisForm.resx">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\KullaniciParametreleriEditForm.resx">
+      <DependentUpon>KullaniciParametreleriEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\KurumBilgileriEditForm.resx">
+      <DependentUpon>KurumBilgileriEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\RaporOnizlem.resx">
+      <DependentUpon>RaporOnizlem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\RaporSecim.resx">
+      <DependentUpon>RaporSecim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\RaporTasarim.resx">
+      <DependentUpon>RaporTasarim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\SubeDonemSecimEditForm.resx">
+      <DependentUpon>SubeDonemSecimEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\TabloDokumParametreleri.resx">
+      <DependentUpon>TabloDokumParametreleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\TatilParametreEditForm.resx">
+      <DependentUpon>TatilParametreEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\VeriAktarimListForm.resx">
+      <DependentUpon>VeriAktarimListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\FormReports\Base\BaseReport.resx">
+      <DependentUpon>BaseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XtraReports\MalzemeIhtiyacPlanlama\IsEmriRaporu.resx">
+      <DependentUpon>IsEmriRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XtraReports\Tahakkuk\OgrenciKartiRaporu.resx">
+      <DependentUpon>OgrenciKartiRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crossdatasourcefiltering _16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crossdatasourcefiltering_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weekend_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weekend_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggestion_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doublenext_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doubleprev_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prev_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doublenext_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doubleprev_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prev_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prev_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\article_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\article_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SenfoniYazilim.Erp.Bll\SenfoniYazilim.Erp.Bll.csproj">
+      <Project>{DF539854-22AA-456E-A9A0-010F09AC092E}</Project>
+      <Name>SenfoniYazilim.Erp.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SenfoniYazilim.Erp.Common\SenfoniYazilim.Erp.Common.csproj">
+      <Project>{266E44C4-F140-4E6C-9275-23CB051A02B8}</Project>
+      <Name>SenfoniYazilim.Erp.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SenfoniYazilim.Erp.Data\SenfoniYazilim.Erp.Data.csproj">
+      <Project>{51F9ED60-AB97-4755-B5F8-60B82C97504C}</Project>
+      <Name>SenfoniYazilim.Erp.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SenfoniYazilim.Erp.Model\SenfoniYazilim.Erp.Model.csproj">
+      <Project>{D1362D38-7D1A-41B4-ADBF-F4E0E9B1B7EA}</Project>
+      <Name>SenfoniYazilim.Erp.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxls_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxls_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxls_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxls_32x323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttodoc_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttopdf_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttotxt_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertrangefilter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertrangefilter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employeeexcellence_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobilephone2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currency_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\converttoparagraphs_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfooter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfooter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historyitem_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historyitem_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employeewelcome_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employeethank_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productorderdetail_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saledetalis_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documentmap_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documentmap_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printpreview_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printpreview_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\CariForms\CompanySettinsForm\" />
+    <Folder Include="Reports\XtraReports\Fatura\" />
+    <Folder Include="Reports\XtraReports\Makbuz\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technology_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technology_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxlsx_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxlsx_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\build_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\build_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\publicfix_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\publicfix_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groupfieldcollection_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groupfieldcollection_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ide_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movedown_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movedown_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squeeze_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squeeze_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piestyledonut_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piestyledonut_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expandcollapse_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expandcollapse_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\today_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\today_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\highlightactiveelements_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\highlightactiveelements_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assigntome_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assigntome_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steparea_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steparea_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technology_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technology_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullstackedline_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullstackedline_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\definednamecreatefromselection_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\definednamecreatefromselection_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productsalesreport_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printstartdate_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printstartdate_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reviewingpane_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reviewingpane_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mergeacross_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mergeacross_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\managerules_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\managerules_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullshoppingcart_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullshoppingcart_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floatingobjectoutlinecolor_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floatingobjectoutlinecolor_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floatingobjectoutlinecolor_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musical.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boorderitem_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boorderitem_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productorderdetail_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emptytablerowseparator_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emptytablerowseparator_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\separator_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\separator_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_16x163.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addnewdatasource_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snaptocells_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productshipments_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morelayoutoptions_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salessummary2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesbystore_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\columns_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underline_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underline_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inserttable_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reading_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reading_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shapelabels_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shapelabels_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productshipments_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bringtofrontoftext_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bringtofrontoftext_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touchmode_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touchmode_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indentincrease_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indentincrease_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twoperiodmovingaverage_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twoperiodmovingaverage_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twoperiodmovingaverage_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twoperiodmovingaverage_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\errorbarspercentage_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\errorbarspercentage_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alignhorizontalcenter2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alignhorizontalcenter2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\language_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\language_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sendtoback_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sendtoback_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\country_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\country_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\packageproduct_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\packageproduct_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stretch_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stretch_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removeitem_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removeitem_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\record_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\record_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removeitem_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removeitem_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switchrowcolumn_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switchrowcolumn_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switchrowcolumn_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switchrowcolumn_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftright_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftright_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cellsautoheight-_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stretch_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stretch_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botask_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botask_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printstartdate_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printstartdate_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printduedate_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printduedate_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chartsshowlegend_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\serieslines_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showtestreport_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showtestreport_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scatter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scatter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\symbol_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\symbol_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chartsshowlegend_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chartsshowlegend_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listmultilevel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listmultilevel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullshoppingcart_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullshoppingcart_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoppingcart_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoppingcart_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feature_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feature_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newfeed_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newfeed_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showproduct_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showproduct_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morelayoutoptions_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadpagesetup_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cards_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newgroup_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newgroup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boresume_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boresume_32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

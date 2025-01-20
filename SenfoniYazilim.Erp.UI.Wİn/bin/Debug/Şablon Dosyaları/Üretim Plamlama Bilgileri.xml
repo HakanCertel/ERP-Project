@@ -1,0 +1,131 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="HeaderFilterButtonShowMode">Button</property>
+    <property name="ColumnAutoWidth">false</property>
+    <property name="RowAutoHeight">true</property>
+    <property name="ShowAutoFilterRow">true</property>
+    <property name="ShowGroupPanel">false</property>
+    <property name="ShowViewCaption">true</property>
+  </property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Columns" iskey="true" value="21">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Name">colMakinaId</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Name">colMalzemeIhtiyacBilgileriId</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Name">colMrpKodu</property>
+      <property name="VisibleIndex">17</property>
+      <property name="Visible">true</property>
+      <property name="Width">101</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Name">colBagliOlduguUstReceteKodu</property>
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="Width">105</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Name">colStokKodu</property>
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+      <property name="Width">90</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Name">colStokAdi</property>
+      <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+      <property name="Width">278</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Name">colBirim</property>
+      <property name="VisibleIndex">4</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Name">colBirimIhtiyac</property>
+      <property name="VisibleIndex">5</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="Name">colToplamIhtiyac</property>
+      <property name="VisibleIndex">6</property>
+      <property name="Visible">true</property>
+      <property name="Width">96</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="Name">colOperasyonSuresi</property>
+      <property name="VisibleIndex">7</property>
+      <property name="Visible">true</property>
+      <property name="Width">93</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="Name">colTavsiyeEdilenUretimBaslamaTarihi</property>
+      <property name="VisibleIndex">16</property>
+      <property name="Visible">true</property>
+      <property name="Width">155</property>
+    </property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="Name">colKapasiteIhtiyaci</property>
+      <property name="VisibleIndex">8</property>
+      <property name="Visible">true</property>
+      <property name="Width">89</property>
+    </property>
+    <property name="Item13" isnull="true" iskey="true">
+      <property name="Name">colIhtiyacTarihi</property>
+      <property name="VisibleIndex">9</property>
+      <property name="Visible">true</property>
+      <property name="Width">155</property>
+    </property>
+    <property name="Item14" isnull="true" iskey="true">
+      <property name="Name">colPlanlandigiTarih</property>
+      <property name="VisibleIndex">10</property>
+      <property name="Visible">true</property>
+      <property name="Width">155</property>
+    </property>
+    <property name="Item15" isnull="true" iskey="true">
+      <property name="Name">colTahminiTeslimTarihi</property>
+      <property name="VisibleIndex">11</property>
+      <property name="Visible">true</property>
+      <property name="Width">155</property>
+    </property>
+    <property name="Item16" isnull="true" iskey="true">
+      <property name="Name">colSira</property>
+      <property name="Width">28</property>
+    </property>
+    <property name="Item17" isnull="true" iskey="true">
+      <property name="Name">colPlanlandi</property>
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Width">44</property>
+    </property>
+    <property name="Item18" isnull="true" iskey="true">
+      <property name="Name">colToplamStokMiktari</property>
+      <property name="VisibleIndex">12</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item19" isnull="true" iskey="true">
+      <property name="Name">colToplamRezerveMiktar</property>
+      <property name="VisibleIndex">13</property>
+      <property name="Visible">true</property>
+      <property name="Width">130</property>
+    </property>
+    <property name="Item20" isnull="true" iskey="true">
+      <property name="Name">colAcikMiktar</property>
+      <property name="VisibleIndex">14</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item21" isnull="true" iskey="true">
+      <property name="Name">colRezerveMiktar</property>
+      <property name="VisibleIndex">15</property>
+      <property name="Visible">true</property>
+    </property>
+  </property>
+  <property name="ActiveFilterString" />
+  <property name="GroupSummarySortInfoState" />
+  <property name="FindFilterText" />
+  <property name="FindPanelVisible">false</property>
+</XtraSerializer>

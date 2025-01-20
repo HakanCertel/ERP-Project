@@ -1,0 +1,128 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="HeaderFilterButtonShowMode">Button</property>
+    <property name="ColumnAutoWidth">false</property>
+    <property name="RowAutoHeight">true</property>
+    <property name="ShowAutoFilterRow">true</property>
+    <property name="ShowGroupPanel">false</property>
+    <property name="ShowViewCaption">true</property>
+  </property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Columns" iskey="true" value="30">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Name">colId</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Name">colKod</property>
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="Width">119</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Name">colStockName</property>
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+      <property name="Width">282</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Name">colUnitName</property>
+      <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Name">colDepoKodu</property>
+      <property name="VisibleIndex">4</property>
+      <property name="Visible">true</property>
+      <property name="Width">110</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Name">colUrunCinsi</property>
+      <property name="VisibleIndex">5</property>
+      <property name="Visible">true</property>
+      <property name="Width">99</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Name">colDepoAdi</property>
+      <property name="VisibleIndex">6</property>
+      <property name="Visible">true</property>
+      <property name="Width">178</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Name">colFeature1Id</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="Name">colFeature2Id</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription1</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription2</property>
+    </property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription3</property>
+    </property>
+    <property name="Item13" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription4</property>
+    </property>
+    <property name="Item14" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription5</property>
+    </property>
+    <property name="Item15" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription6</property>
+    </property>
+    <property name="Item16" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription7</property>
+    </property>
+    <property name="Item17" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription8</property>
+    </property>
+    <property name="Item18" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription9</property>
+    </property>
+    <property name="Item19" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription10</property>
+    </property>
+    <property name="Item20" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription11</property>
+    </property>
+    <property name="Item21" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription12</property>
+    </property>
+    <property name="Item22" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription13</property>
+    </property>
+    <property name="Item23" isnull="true" iskey="true">
+      <property name="Name">COLFeatureDescription14</property>
+    </property>
+    <property name="Item24" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription15</property>
+    </property>
+    <property name="Item25" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription16</property>
+    </property>
+    <property name="Item26" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription17</property>
+    </property>
+    <property name="Item27" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription18</property>
+    </property>
+    <property name="Item28" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription19</property>
+    </property>
+    <property name="Item29" isnull="true" iskey="true">
+      <property name="Name">colFeatureDescription20</property>
+    </property>
+    <property name="Item30" isnull="true" iskey="true">
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Width">35</property>
+    </property>
+  </property>
+  <property name="ActiveFilterString" />
+  <property name="MRUFilters">~Xtra#Base64AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFHcmlkLnYxNy4xLCBWZXJzaW9uPTE3LjEuNC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAAADZEZXZFeHByZXNzLlh0cmFHcmlkLlZpZXdzLkJhc2UuTVJVVmlld0ZpbHRlckNvbGxlY3Rpb24BAAAAE0NvbGxlY3Rpb25CYXNlK2xpc3QDHFN5c3RlbS5Db2xsZWN0aW9ucy5BcnJheUxpc3QCAAAACQMAAAAEAwAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuQXJyYXlMaXN0AwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkEAAAACgAAAAwAAAAQBAAAABAAAAAJBQAAAAkGAAAACQcAAAAJCAAAAAkJAAAACQoAAAAJCwAAAAkMAAAACQ0AAAAJDgAAAA0GDA8AAABZRGV2RXhwcmVzcy5EYXRhLnYxNy4xLCBWZXJzaW9uPTE3LjEuNC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFBQAAAClEZXZFeHByZXNzLlh0cmFHcmlkLlZpZXdzLkJhc2UuVmlld0ZpbHRlcgIAAAAYZk5vbkNvbHVtbkZpbHRlckNyaXRlcmlhE0NvbGxlY3Rpb25CYXNlK2xpc3QEAypEZXZFeHByZXNzLkRhdGEuRmlsdGVyaW5nLkNyaXRlcmlhT3BlcmF0b3IPAAAAHFN5c3RlbS5Db2xsZWN0aW9ucy5BcnJheUxpc3QCAAAACgkQAAAAAQYAAAAFAAAACgkRAAAAAQcAAAAFAAAACgkSAAAAAQgAAAAFAAAACgkTAAAAAQkAAAAFAAAACgkUAAAAAQoAAAAFAAAACgkVAAAAAQsAAAAFAAAACgkWAAAAAQwAAAAFAAAACgkXAAAAAQ0AAAAFAAAACgkYAAAAAQ4AAAAFAAAACgkZAAAAARAAAAADAAAACRoAAAABAAAAAwAAAAERAAAAAwAAAAkbAAAAAQAAAAMAAAABEgAAAAMAAAAJHAAAAAEAAAADAAAAARMAAAADAAAACR0AAAABAAAAAwAAAAEUAAAAAwAAAAkeAAAAAQAAAAMAAAABFQAAAAMAAAAJHwAAAAEAAAADAAAAARYAAAADAAAACSAAAAABAAAAAwAAAAEXAAAAAwAAAAkhAAAAAQAAAAMAAAABGAAAAAMAAAAJIgAAAAEAAAADAAAAARkAAAADAAAACSMAAAABAAAAAwAAABAaAAAABAAAAAkkAAAADQMQGwAAAAQAAAAJJQAAAA0DEBwAAAAEAAAACSYAAAANAxAdAAAABAAAAAknAAAADQMQHgAAAAQAAAAJKAAAAA0DEB8AAAAEAAAACSkAAAANAxAgAAAABAAAAAkqAAAADQMQIQAAAAQAAAAJKwAAAA0DECIAAAAEAAAACSwAAAANAxAjAAAABAAAAAktAAAADQMMLgAAABlEZXZFeHByZXNzLlh0cmFHcmlkLnYxNy4xBSQAAAAzRGV2RXhwcmVzcy5YdHJhR3JpZC5WaWV3cy5CYXNlLlZpZXdDb2x1bW5GaWx0ZXJJbmZvAgAAAAZGaWx0ZXIGQ29sdW1uBAEsRGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkNvbHVtbkZpbHRlckluZm8uAAAALgAAAAkvAAAABjAAAAAGY29sS29kASUAAAAkAAAACTEAAAAGMgAAAAxjb2xTdG9ja05hbWUBJgAAACQAAAAJMwAAAAkyAAAAAScAAAAkAAAACTUAAAAJMgAAAAEoAAAAJAAAAAk3AAAACTIAAAABKQAAACQAAAAJOQAAAAkyAAAAASoAAAAkAAAACTsAAAAJMgAAAAErAAAAJAAAAAk9AAAACTIAAAABLAAAACQAAAAJPwAAAAkyAAAAAS0AAAAkAAAACUEAAAAJMgAAAAUvAAAALERldkV4cHJlc3MuWHRyYUdyaWQuQ29sdW1ucy5Db2x1bW5GaWx0ZXJJbmZvBQAAAARUeXBlBEtpbmQLRGlzcGxheVRleHQMRmlsdGVyU3RyaW5nBVZhbHVlAAABAQEICC4AAAADAAAAAAAAAAZDAAAAAAZEAAAAF0NvbnRhaW5zKFtLb2RdLCAnYXAwMScpBkUAAAAEYXAwMQExAAAALwAAAAMAAAAAAAAACUMAAAAGRwAAAB9Db250YWlucyhbU3RvY2tOYW1lXSwgJ21hbmRhbCcpBkgAAAAGbWFuZGFsATMAAAAvAAAAAwAAAAAAAAAJQwAAAAZKAAAAHkNvbnRhaW5zKFtTdG9ja05hbWVdLCAndGFodGEnKQZLAAAABXRhaHRhATUAAAAvAAAAAwAAAAAAAAAJQwAAAAZNAAAAH0NvbnRhaW5zKFtTdG9ja05hbWVdLCAncGVyw6dpJykGTgAAAAZwZXLDp2kBNwAAAC8AAAADAAAAAAAAAAlDAAAABlAAAAAgQ29udGFpbnMoW1N0b2NrTmFtZV0sICdwZXLDp2luJykGUQAAAAdwZXLDp2luATkAAAAvAAAAAwAAAAAAAAAJQwAAAAZTAAAAHkNvbnRhaW5zKFtTdG9ja05hbWVdLCAnbWFuZGEnKQZUAAAABW1hbmRhATsAAAAvAAAAAwAAAAAAAAAJQwAAAAZWAAAAHENvbnRhaW5zKFtTdG9ja05hbWVdLCAnbWlsJykGVwAAAANtaWwBPQAAAC8AAAADAAAAAAAAAAlDAAAABlkAAAAcQ29udGFpbnMoW1N0b2NrTmFtZV0sICd5YXknKQZaAAAAA3lheQE/AAAALwAAAAMAAAAAAAAACUMAAAAGXAAAAB9Db250YWlucyhbU3RvY2tOYW1lXSwgJ8O8c3QgbScpBl0AAAAGw7xzdCBtAUEAAAAvAAAAAwAAAAAAAAAJQwAAAAZfAAAAHkNvbnRhaW5zKFtTdG9ja05hbWVdLCAnYWx0IG0nKQZgAAAABWFsdCBtCw==</property>
+  <property name="GroupSummarySortInfoState" />
+  <property name="FindFilterText" />
+  <property name="FindPanelVisible">false</property>
+</XtraSerializer>
